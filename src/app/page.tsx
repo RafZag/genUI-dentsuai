@@ -11,8 +11,8 @@ export default function Home() {
           Your project is successfully initialized with TypeScript, App Router, Tailwind CSS v4, and shadcn/ui.
         </p>
         <div className="flex justify-center gap-4">
-          <Button variant="default">Get Started</Button>
-          <Button variant="outline">Documentation</Button>
+          <Button variant="secondary" size="lg">Get Started</Button>
+          <Button variant="outline" size="lg">Documentation</Button>
         </div>
       </div>
     </main>
