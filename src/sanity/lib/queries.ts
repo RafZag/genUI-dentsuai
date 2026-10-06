@@ -33,3 +33,17 @@ export const homePageQuery = groq`
     }
   }
 `;
+
+export const productBySlugQuery = groq`
+  *[_type == "product" && slug.current == $slug][0]{
+    _id,
+    name,
+    tagline,
+    description,
+    "slug": slug.current,
+    logo {
+      asset->{ url },
+      alt
+    }
+  }
+`;
