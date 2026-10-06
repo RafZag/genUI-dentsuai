@@ -44,6 +44,35 @@ export const productBySlugQuery = groq`
     logo {
       asset->{ url },
       alt
+    },
+    challenges[]{
+      _key,
+      header,
+      body
+    },
+    solutions[]{
+      _key,
+      header,
+      body
+    },
+    gains[]{
+      _key,
+      header,
+      body,
+      icon {
+        asset->{ url },
+        alt
+      }
+    },
+    usage[]{
+      _key,
+      header,
+      body
+    },
+    faq[]{
+      _key,
+      question,
+      answer
     }
   }
 `;

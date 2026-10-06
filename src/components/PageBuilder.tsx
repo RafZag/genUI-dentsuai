@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProductCarouselBlock } from './ui/blocks/ProductCarouselBlock';
+import { ProductCarouselBlock } from './blocks/ProductCarouselBlock';
 
 // Słownik zawierający wyłącznie obsługiwany w teście blok karuzeli
 const BLOCK_COMPONENTS: Record<string, React.ComponentType<any>> = {
