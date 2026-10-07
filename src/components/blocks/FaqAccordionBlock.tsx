@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
+import { SectionHeader } from '@/components/ui/section-header';
 
 interface FaqItem {
   _key?: string;
@@ -20,14 +21,11 @@ export function FaqAccordionBlock({ items, defaultOpenFirst }: FaqAccordionBlock
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="py-12 border-t border-border">
+    <section className="py-12 border-t border-white/10 w-full text-left">
       <div className="mb-8">
-        <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-          Wątpliwości i odpowiedzi
-        </span>
-        <h2 className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+        <SectionHeader colorClass="text-white" plusIconColor="text-[#adadad]">
           Często zadawane pytania
-        </h2>
+        </SectionHeader>
       </div>
 
       <Accordion
@@ -36,10 +34,10 @@ export function FaqAccordionBlock({ items, defaultOpenFirst }: FaqAccordionBlock
       >
         {items.map((item, idx) => (
           <AccordionItem key={item._key || idx} value={`item-${idx}`}>
-            <AccordionTrigger className="text-left text-base font-medium">
+            <AccordionTrigger>
               {item.question}
             </AccordionTrigger>
-            <AccordionContent className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+            <AccordionContent>
               {item.answer}
             </AccordionContent>
           </AccordionItem>

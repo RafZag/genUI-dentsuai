@@ -1,3 +1,6 @@
+import { SectionHeader } from '@/components/ui/section-header';
+import { Card } from '@/components/ui/card';
+
 interface SolutionItem {
   _key?: string;
   header?: string;
@@ -18,30 +21,27 @@ export function SolutionsBlock({
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="py-12 border-t border-border">
+    <section className="py-12 border-t border-white/10">
       <div className="mb-8">
-        <span className="text-xs font-semibold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
-          Nasza odpowiedź
-        </span>
-        <h2 className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-          Jak rozwiązujemy te trudności
-        </h2>
+        <SectionHeader colorClass="text-[#00ff84]" plusIconColor="text-[#adadad]">
+          Jak odpowiadamy na te potrzeby
+        </SectionHeader>
       </div>
 
       {variant === 'timeline-steps' ? (
-        <div className="relative border-l-2 border-emerald-500/30 ml-4 pl-6 space-y-8">
+        <div className="relative border-l border-white/20 ml-4 pl-8 space-y-10">
           {items.map((item, idx) => (
             <div key={item._key || idx} className="relative">
-              <span className="absolute -left-[33px] top-0 flex h-6 w-6 items-center justify-center rounded-full bg-emerald-600 text-white text-xs font-bold ring-4 ring-background">
+              <span className="absolute -left-[45px] top-0 flex h-7 w-7 items-center justify-center rounded-full bg-[#00ff84] text-black text-xs font-bold ring-4 ring-[#101010]">
                 {idx + 1}
               </span>
               {item.header && (
-                <h3 className="text-lg font-semibold text-foreground mb-1">
+                <h3 className="text-xl font-medium text-white mb-2">
                   {item.header}
                 </h3>
               )}
               {item.body && (
-                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                <p className="text-base text-[#adadad] font-light leading-relaxed whitespace-pre-line">
                   {item.body}
                 </p>
               )}
@@ -52,22 +52,22 @@ export function SolutionsBlock({
         /* Domyślny: grid-checkmarks */
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {items.map((item, idx) => (
-            <div
+            <Card
               key={item._key || idx}
-              className="rounded-xl border border-emerald-200/60 bg-emerald-50/30 p-6 dark:border-emerald-950/50 dark:bg-emerald-950/10"
+              className="bg-black/40 border border-white/15 p-6 sm:p-8 hover:border-[#00ff84]/50 transition-colors"
             >
               {item.header && (
-                <h3 className="text-lg font-semibold text-foreground mb-2 flex items-center gap-2">
-                  <span className="text-emerald-600 dark:text-emerald-400">✓</span>
+                <h3 className="text-xl font-medium text-white mb-3 flex items-center gap-3">
+                  <span className="text-[#00ff84] font-semibold text-lg">✓</span>
                   {item.header}
                 </h3>
               )}
               {item.body && (
-                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                <p className="text-base text-[#adadad] font-light leading-relaxed whitespace-pre-line">
                   {item.body}
                 </p>
               )}
-            </div>
+            </Card>
           ))}
         </div>
       )}

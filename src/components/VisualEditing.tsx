@@ -1,6 +1,7 @@
 'use client';
-import { VisualEditing } from 'next-sanity/visual-editing';
+
+import { VisualEditing } from '@sanity/visual-editing/react';
 
 export function VisualEditingComponent() {
-  return <VisualEditing />;
+  return <VisualEditing portal={false} />;
 }

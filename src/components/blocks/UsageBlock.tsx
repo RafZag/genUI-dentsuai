@@ -1,3 +1,6 @@
+import { SectionHeader } from '@/components/ui/section-header';
+import { Card } from '@/components/ui/card';
+
 interface UsageItem {
   _key?: string;
   header?: string;
@@ -9,42 +12,39 @@ export interface UsageBlockProps {
   style?: 'numbered-cards' | 'horizontal-strip' | string;
 }
 
-export function UsageBlock({ items, style = 'numbered-cards' }: UsageBlockProps) {
+export function UsageBlock({ items }: UsageBlockProps) {
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="py-12 border-t border-border">
+    <section className="py-12 border-t border-white/10">
       <div className="mb-8">
-        <span className="text-xs font-semibold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
-          Zastosowanie
-        </span>
-        <h2 className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+        <SectionHeader colorClass="text-white" plusIconColor="text-[#adadad]">
           Kiedy warto po to sięgnąć?
-        </h2>
+        </SectionHeader>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {items.map((item, idx) => (
-          <div
+          <Card
             key={item._key || idx}
-            className="rounded-xl border bg-muted/40 p-6 flex flex-col justify-start"
+            className="bg-black/40 border border-white/15 p-6 sm:p-8 flex flex-col justify-start hover:border-white/30 transition-colors"
           >
-            <div className="flex items-center gap-3 mb-2">
-              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-primary/10 text-xs font-bold text-primary">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/20 bg-white/10 text-xs font-medium text-white">
                 {idx + 1}
               </span>
               {item.header && (
-                <h3 className="text-base font-semibold text-foreground">
+                <h3 className="text-xl font-medium text-white">
                   {item.header}
                 </h3>
               )}
             </div>
             {item.body && (
-              <p className="text-sm text-muted-foreground leading-relaxed pl-9 whitespace-pre-line">
+              <p className="text-base text-[#adadad] font-light leading-relaxed pl-10 whitespace-pre-line">
                 {item.body}
               </p>
             )}
-          </div>
+          </Card>
         ))}
       </div>
     </section>

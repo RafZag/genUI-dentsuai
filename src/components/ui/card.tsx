@@ -1,21 +1,50 @@
 import * as React from "react"
-import { cn } from "cn"
+import { cn } from "@/lib/utils"
+
+export interface CardProps extends React.ComponentProps<"div"> {
+  glowColor?: string;
+}
 
 function Card({
   className,
-  size = "default",
+  glowColor,
+  style,
+  children,
   ...props
-}: React.ComponentProps<"div"> & { size?: "default" | "sm" }) {
+}: CardProps) {
+  const dynamicStyle = glowColor
+    ? {
+        background: `radial-gradient(farthest-corner at 40px 40px, ${glowColor}40 0%, rgba(16,16,16,0.7) 50%)`,
+        backgroundRepeat: "no-repeat",
+        ...style,
+      }
+    : style
+
   return (
     <div
       data-slot="card"
-      data-size={size}
+      style={dynamicStyle}
       className={cn(
-        "group/card flex flex-col gap-(--card-spacing) overflow-hidden rounded-xl bg-card py-(--card-spacing) text-sm text-card-foreground ring-1 ring-foreground/10 [--card-spacing:--spacing(4)] has-data-[slot=card-footer]:pb-0 has-[>img:first-child]:pt-0 data-[size=sm]:[--card-spacing:--spacing(3)] data-[size=sm]:has-data-[slot=card-footer]:pb-0 *:[img:first-child]:rounded-t-xl *:[img:last-child]:rounded-b-xl",
+        "group/card relative flex flex-col overflow-visible rounded-2xl border border-white/15 bg-black/40 backdrop-blur-sm p-6 lg:p-8 text-card-foreground transition-all duration-300",
+        glowColor && "hover:border-white/30",
         className
       )}
       {...props}
-    />
+    >
+      {glowColor && (
+        <div
+          className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-500 ease-out group-hover/card:opacity-100"
+          style={{
+            background: `radial-gradient(farthest-corner at 40px 40px, ${glowColor}50 0%, transparent 60%)`,
+            backgroundRepeat: "no-repeat",
+          }}
+          aria-hidden="true"
+        />
+      )}
+      <div className="relative z-10 flex h-full flex-col justify-between">
+        {children}
+      </div>
+    </div>
   )
 }
 
@@ -23,10 +52,7 @@ function CardHeader({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-header"
-      className={cn(
-        "group/card-header @container/card-header grid auto-rows-min items-start gap-1 rounded-t-xl px-(--card-spacing) has-data-[slot=card-action]:grid-cols-[1fr_auto] has-data-[slot=card-description]:grid-rows-[auto_auto] [.border-b]:pb-(--card-spacing)",
-        className
-      )}
+      className={cn("flex flex-col gap-2 pb-4", className)}
       {...props}
     />
   )
@@ -37,7 +63,7 @@ function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
     <div
       data-slot="card-title"
       className={cn(
-        "font-heading text-base leading-snug font-medium group-data-[size=sm]/card:text-sm",
+        "text-xl lg:text-2xl font-semibold tracking-tight text-white",
         className
       )}
       {...props}
@@ -49,7 +75,7 @@ function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-description"
-      className={cn("text-sm text-muted-foreground", className)}
+      className={cn("text-sm font-light text-lightGray leading-relaxed", className)}
       {...props}
     />
   )
@@ -59,10 +85,7 @@ function CardAction({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-action"
-      className={cn(
-        "col-start-2 row-span-2 row-start-1 self-start justify-self-end",
-        className
-      )}
+      className={cn("self-start", className)}
       {...props}
     />
   )
@@ -72,7 +95,7 @@ function CardContent({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-content"
-      className={cn("px-(--card-spacing)", className)}
+      className={cn("flex-1", className)}
       {...props}
     />
   )
@@ -82,10 +105,7 @@ function CardFooter({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-footer"
-      className={cn(
-        "flex items-center rounded-b-xl border-t bg-muted/50 p-(--card-spacing)",
-        className
-      )}
+      className={cn("flex items-center justify-between pt-4", className)}
       {...props}
     />
   )

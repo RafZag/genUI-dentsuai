@@ -1,3 +1,6 @@
+import { SectionHeader } from '@/components/ui/section-header';
+import { Card } from '@/components/ui/card';
+
 interface ChallengeItem {
   _key?: string;
   header?: string;
@@ -18,14 +21,11 @@ export function ChallengesBlock({
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="py-12 border-t border-border">
+    <section className="py-12 border-t border-white/10">
       <div className="mb-8">
-        <span className="text-xs font-semibold uppercase tracking-wider text-rose-600 dark:text-rose-400">
-          Wyzwania rynku
-        </span>
-        <h2 className="mt-2 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-          Z jakimi problemami się mierzysz?
-        </h2>
+        <SectionHeader colorClass="text-white" plusIconColor="text-[#adadad]">
+          Z jakimi wyzwaniami się mierzysz?
+        </SectionHeader>
       </div>
 
       {variant === 'minimal-list' ? (
@@ -33,61 +33,41 @@ export function ChallengesBlock({
           {items.map((item, idx) => (
             <li
               key={item._key || idx}
-              className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-4 py-3 border-b border-border/50"
+              className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 py-4 border-b border-white/10"
             >
               {item.header && (
-                <span className="font-semibold text-foreground min-w-[200px]">
+                <span className="font-medium text-white text-lg min-w-[220px]">
                   {item.header}
                 </span>
               )}
               {item.body && (
-                <span className="text-sm text-muted-foreground">
+                <span className="text-base text-[#adadad] font-light leading-relaxed">
                   {item.body}
                 </span>
               )}
             </li>
           ))}
         </ul>
-      ) : variant === 'cards-alert' ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {items.map((item, idx) => (
-            <div
-              key={item._key || idx}
-              className="rounded-xl border-2 border-rose-300 bg-rose-50/70 p-6 dark:border-rose-900 dark:bg-rose-950/30"
-            >
-              {item.header && (
-                <h3 className="text-lg font-bold text-rose-900 dark:text-rose-200 mb-2 flex items-center gap-2">
-                  <span>⚠️</span>
-                  {item.header}
-                </h3>
-              )}
-              {item.body && (
-                <p className="text-sm text-rose-800/90 dark:text-rose-300/90 leading-relaxed whitespace-pre-line">
-                  {item.body}
-                </p>
-              )}
-            </div>
-          ))}
-        </div>
       ) : (
-        /* Domyślny: two-columns */
+        /* Domyślny oraz cards-alert: eleganckie ciemne karty z obwódką w stylu dentsuai */
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {items.map((item, idx) => (
-            <div
+            <Card
               key={item._key || idx}
-              className="rounded-xl border border-rose-200/60 bg-rose-50/30 p-6 dark:border-rose-950/50 dark:bg-rose-950/10"
+              className="bg-almostBlack/85 border border-white/15 p-6 sm:p-8"
             >
               {item.header && (
-                <h3 className="text-lg font-semibold text-foreground mb-2">
+                <h3 className="text-xl font-medium text-white mb-3 flex items-center gap-2.5">
+                  <span className="text-rose-400 font-normal">/</span>
                   {item.header}
                 </h3>
               )}
               {item.body && (
-                <p className="text-sm text-muted-foreground leading-relaxed whitespace-pre-line">
+                <p className="text-base text-[#adadad] font-light leading-relaxed whitespace-pre-line">
                   {item.body}
                 </p>
               )}
-            </div>
+            </Card>
           ))}
         </div>
       )}
