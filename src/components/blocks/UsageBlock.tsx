@@ -4,11 +4,12 @@ interface UsageItem {
   body?: string;
 }
 
-interface UsageBlockProps {
+export interface UsageBlockProps {
   items?: UsageItem[];
+  style?: 'numbered-cards' | 'horizontal-strip' | string;
 }
 
-export function UsageBlock({ items }: UsageBlockProps) {
+export function UsageBlock({ items, style = 'numbered-cards' }: UsageBlockProps) {
   if (!items || items.length === 0) return null;
 
   return (

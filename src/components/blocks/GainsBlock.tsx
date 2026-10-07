@@ -10,11 +10,13 @@ interface GainItem {
   };
 }
 
-interface GainsBlockProps {
+export interface GainsBlockProps {
   items?: GainItem[];
+  columns?: '2' | '3' | 'bento' | string;
+  promotedIndex?: number;
 }
 
-export function GainsBlock({ items }: GainsBlockProps) {
+export function GainsBlock({ items, columns = '3', promotedIndex }: GainsBlockProps) {
   if (!items || items.length === 0) return null;
 
   return (

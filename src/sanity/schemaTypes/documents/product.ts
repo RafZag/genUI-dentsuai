@@ -73,8 +73,8 @@ export default defineType({
       type: 'array',
       of: [
         defineField({
-          name: 'challenge',
-          title: 'Challenge',
+          name: 'solution',
+          title: 'Solution',
           type: 'object',
           fields: [
             defineField({
@@ -190,6 +190,19 @@ export default defineType({
           },
         }),
       ],
+    }),
+    defineField({
+      name: 'sections',
+      title: 'Wygenerowany układ strony (GenUI)',
+      type: 'array',
+      of: [
+        { type: 'challengesBlock' },
+        { type: 'solutionsBlock' },
+        { type: 'gainsBlock' },
+        { type: 'usageBlock' },
+        { type: 'faqAccordionBlock' },
+      ],
+      description: 'AI decyduje o kolejności i wariantach prezentacji wprowadzonych danych.',
     }),
   ],
 });

@@ -45,34 +45,25 @@ export const productBySlugQuery = groq`
       asset->{ url },
       alt
     },
-    challenges[]{
+    // POBIERAMY WYGENEROWANY UKŁAD Z SANITY:
+    sections[]{
       _key,
-      header,
-      body
+      _type,
+      variant,
+      columns,
+      promotedIndex,
+      style,
+      defaultOpenFirst
     },
-    solutions[]{
-      _key,
-      header,
-      body
-    },
+    challenges[]{ _key, header, body },
+    solutions[]{ _key, header, body },
     gains[]{
       _key,
       header,
       body,
-      icon {
-        asset->{ url },
-        alt
-      }
+      icon { asset->{ url }, alt }
     },
-    usage[]{
-      _key,
-      header,
-      body
-    },
-    faq[]{
-      _key,
-      question,
-      answer
-    }
+    usage[]{ _key, header, body },
+    faq[]{ _key, question, answer }
   }
 `;

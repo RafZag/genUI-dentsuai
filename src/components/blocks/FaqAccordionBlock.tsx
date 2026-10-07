@@ -13,9 +13,10 @@ interface FaqItem {
 
 interface FaqAccordionBlockProps {
   items?: FaqItem[];
+  defaultOpenFirst?: boolean;
 }
 
-export function FaqAccordionBlock({ items }: FaqAccordionBlockProps) {
+export function FaqAccordionBlock({ items, defaultOpenFirst }: FaqAccordionBlockProps) {
   if (!items || items.length === 0) return null;
 
   return (
@@ -29,7 +30,10 @@ export function FaqAccordionBlock({ items }: FaqAccordionBlockProps) {
         </h2>
       </div>
 
-      <Accordion className="w-full">
+      <Accordion
+        className="w-full"
+        defaultValue={defaultOpenFirst && items.length > 0 ? ['item-0'] : undefined}
+      >
         {items.map((item, idx) => (
           <AccordionItem key={item._key || idx} value={`item-${idx}`}>
             <AccordionTrigger className="text-left text-base font-medium">
