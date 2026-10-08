@@ -1,6 +1,6 @@
+import React from 'react';
 import Image from 'next/image';
-import { SectionHeader } from '@/components/ui/section-header';
-import { Card } from '@/components/ui/card';
+import { SectionHeader } from '@/components/SectionHeader';
 
 interface GainItem {
   _key?: string;
@@ -16,28 +16,42 @@ export interface GainsBlockProps {
   items?: GainItem[];
   columns?: '2' | '3' | 'bento' | string;
   promotedIndex?: number;
+  colorClass?: string;
+  brandHex?: string;
 }
 
-export function GainsBlock({ items }: GainsBlockProps) {
+export function GainsBlock({
+  items,
+  columns = '3',
+  colorClass = 'text-white',
+  brandHex = '#00ff84',
+}: GainsBlockProps) {
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="py-12 border-t border-white/10">
+    <section className="py-12 border-t border-white/10 w-full">
       <div className="mb-8">
-        <SectionHeader colorClass="text-white" plusIconColor="text-[#adadad]">
+        <SectionHeader colorClass={colorClass} plusIconColor="text-lightGray">
           Wartość dla Twojej organizacji
         </SectionHeader>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div
+        className={`grid grid-cols-1 ${
+          columns === '2' ? 'sm:grid-cols-2' : 'sm:grid-cols-2 lg:grid-cols-3'
+        } gap-6`}
+      >
         {items.map((item, idx) => (
-          <Card
+          <div
             key={item._key || idx}
-            className="bg-black/40 border border-white/15 p-6 sm:p-8 flex flex-col justify-between hover:border-white/30 transition-colors"
+            className="rounded-2xl border border-white/15 bg-black/40 backdrop-blur-sm p-6 sm:p-8 flex flex-col justify-between hover:border-white/30 transition-colors"
           >
             <div>
               {item.icon?.asset?.url && (
-                <div className="relative mb-6 h-12 w-12 overflow-hidden rounded-xl border border-white/10 bg-white/5 p-2">
+                <div
+                  className="relative mb-6 h-12 w-12 overflow-hidden rounded-xl border border-white/10 p-2"
+                  style={{ backgroundColor: `${brandHex}15` }}
+                >
                   <Image
                     src={item.icon.asset.url}
                     alt={item.icon.alt || item.header || 'Gain icon'}
@@ -58,7 +72,7 @@ export function GainsBlock({ items }: GainsBlockProps) {
                 </p>
               )}
             </div>
-          </Card>
+          </div>
         ))}
       </div>
     </section>

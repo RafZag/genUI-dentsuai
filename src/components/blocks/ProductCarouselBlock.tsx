@@ -1,18 +1,13 @@
+'use client';
+
+import React, { useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, ExternalLink } from 'lucide-react';
+import { ExternalLink, ChevronLeft, ChevronRight } from 'lucide-react';
 import { ProductCarouselBlockProps } from '@/types/blocks';
 import { getProductBrandColor } from '@/lib/productColors';
-
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
-import { Card } from '@/components/ui/card';
-import { SectionHeader } from '@/components/ui/section-header';
+import { SectionHeader } from '@/components/SectionHeader';
+import { DentsuArrowIcon } from '@/components/icons/DentsuArrowIcon';
 
 export function ProductCarouselBlock({
   heading = 'Nasze rozwiązania',
@@ -21,6 +16,8 @@ export function ProductCarouselBlock({
   selectedProducts = [],
   allProducts = [],
 }: ProductCarouselBlockProps) {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+
   const products =
     displayMode === 'manual' && selectedProducts.length > 0
       ? selectedProducts
@@ -29,6 +26,16 @@ export function ProductCarouselBlock({
   if (!products || products.length === 0) {
     return null;
   }
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollContainerRef.current) {
+      const scrollAmount = 400;
+      scrollContainerRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return (
     <section className="mx-auto w-full max-w-7xl px-6 py-16 lg:px-8">
@@ -39,119 +46,132 @@ export function ProductCarouselBlock({
             {heading}
           </SectionHeader>
           {subheading && (
-            <p className="mt-3 text-base lg:text-lg text-[#adadad] font-light max-w-2xl pl-10 sm:pl-11">
+            <p className="mt-3 text-base lg:text-lg text-lightGray font-light max-w-2xl pl-10 sm:pl-11">
               {subheading}
             </p>
           )}
         </div>
+
+        {/* Przyciski przewijania karuzeli w stylu dentsuai.com */}
+        <div className="flex items-center gap-3 self-end md:self-auto">
+          <button
+            type="button"
+            onClick={() => scroll('left')}
+            className="h-10 w-10 flex items-center justify-center rounded-full border border-white/20 bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm transition-all duration-200 cursor-pointer"
+            aria-label="Przewiń w lewo"
+          >
+            <ChevronLeft className="h-5 w-5" />
+          </button>
+          <button
+            type="button"
+            onClick={() => scroll('right')}
+            className="h-10 w-10 flex items-center justify-center rounded-full border border-white/20 bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm transition-all duration-200 cursor-pointer"
+            aria-label="Przewiń w prawo"
+          >
+            <ChevronRight className="h-5 w-5" />
+          </button>
+        </div>
       </div>
 
-      {/* Karuzela shadcn/ui z dark glass controls */}
-      <Carousel
-        opts={{
-          align: 'start',
-          loop: false,
-        }}
-        className="w-full relative"
+      {/* Kontener kart produktów z oryginalnymi stylami dentsuai.com */}
+      <div
+        ref={scrollContainerRef}
+        className="flex gap-6 overflow-x-auto pb-8 pt-4 scrollbar-none scroll-smooth select-none"
+        style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
       >
-        <div className="flex items-center justify-end gap-3 mb-6">
-          <CarouselPrevious className="static translate-y-0" />
-          <CarouselNext className="static translate-y-0" />
-        </div>
+        {products.map((product) => {
+          const brandColor = getProductBrandColor(product.slug || product.name);
 
-        <CarouselContent className="-ml-6">
-          {products.map((product) => {
-            const brandColor = getProductBrandColor(product.slug || product.name);
+          return (
+            <div
+              key={product._id}
+              className="group relative overflow-visible backdrop-blur-sm w-[320px] sm:w-[380px] shrink-0 rounded-2xl border border-white/15 pl-8 pr-6 pt-7 pb-7 text-left text-white/90 flex flex-col justify-between"
+              style={{
+                background: `radial-gradient(farthest-corner at 40px 40px, ${brandColor.hex}50 0%, rgba(16,16,16,0.7) 50%)`,
+                backgroundRepeat: 'no-repeat',
+              }}
+            >
+              {/* Efekt poświaty hover */}
+              <div
+                className="mobile-grow-overlay pointer-events-none absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100"
+                style={{
+                  background: `radial-gradient(farthest-corner at 40px 40px, ${brandColor.hex}50 0%, transparent 60%)`,
+                  backgroundRepeat: 'no-repeat',
+                }}
+              />
 
-            return (
-              <CarouselItem
-                key={product._id}
-                className="pl-6 basis-full sm:basis-1/2 lg:basis-1/3"
-              >
-                <div className="h-full">
-                  <Card
-                    glowColor={brandColor.hex}
-                    className="flex h-full min-h-[420px] flex-col justify-between p-8"
+              <div className="relative z-10 flex h-full flex-col justify-between">
+                <div>
+                  {/* Logo i nazwa produktu z animacją hover */}
+                  <Link
+                    className="flex items-center gap-4 h-24 mb-3"
+                    href={`/produkty/${product.slug}`}
                   >
-                    <div>
-                      {/* Górna belka karty: Logo i Zewnętrzny link */}
-                      <div className="flex items-start justify-between gap-4 mb-6">
-                        <Link
-                          href={`/produkty/${product.slug}`}
-                          className="flex items-center gap-4 group/logo"
-                        >
-                          {product.logo?.asset?.url ? (
-                            <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-xl border border-white/10 bg-black/40 p-2 shadow-lg transition-transform duration-300 group-hover/card:scale-105">
-                              <Image
-                                src={product.logo.asset.url}
-                                alt={product.logo.alt || product.name}
-                                fill
-                                sizes="56px"
-                                className="object-contain drop-shadow-[10px_8px_4px_rgba(0,0,0,0.25)]"
-                              />
-                            </div>
-                          ) : (
-                            <div
-                              className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-white/10 text-xl font-bold shadow-lg"
-                              style={{
-                                color: brandColor.hex,
-                                backgroundColor: `${brandColor.hex}20`,
-                              }}
-                            >
-                              {product.name.slice(0, 2).toUpperCase()}
-                            </div>
-                          )}
-                        </Link>
-
-                        {product.websiteUrl && (
-                          <a
-                            href={product.websiteUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="p-2 text-[#adadad] hover:text-white transition-colors"
-                            aria-label={`Odwiedź stronę ${product.name}`}
-                          >
-                            <ExternalLink className="h-4 w-4" />
-                          </a>
-                        )}
+                    {product.logo?.asset?.url ? (
+                      <div className="relative h-14 w-14 shrink-0">
+                        <Image
+                          src={product.logo.asset.url}
+                          alt={`${product.name} logo`}
+                          fill
+                          sizes="56px"
+                          className="mobile-grow-logo object-contain drop-shadow-[10px_8px_4px_rgba(0,0,0,0.25)]"
+                        />
                       </div>
-
-                      {/* Tytuł produktu z kolorem marki */}
-                      <Link href={`/produkty/${product.slug}`}>
-                        <h3
-                          className="text-2xl lg:text-3xl font-semibold tracking-tight transition-transform duration-300 group-hover/card:translate-x-1"
-                          style={{ color: brandColor.hex }}
-                        >
-                          {product.name}
-                        </h3>
-                      </Link>
-
-                      {/* Tagline produktu */}
-                      {product.tagline && (
-                        <p className="mt-4 text-base lg:text-lg font-light text-white leading-snug line-clamp-3">
-                          {product.tagline}
-                        </p>
-                      )}
-                    </div>
-
-                    {/* Stopka karty z linkiem szczegółów */}
-                    <div className="pt-8 border-t border-white/10 flex items-center justify-between">
-                      <Link
-                        href={`/produkty/${product.slug}`}
-                        className="inline-flex items-center gap-2 text-sm font-medium transition-opacity hover:opacity-100 opacity-80"
-                        style={{ color: brandColor.hex }}
+                    ) : (
+                      <div
+                        className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl border border-white/10 text-xl font-bold"
+                        style={{
+                          color: brandColor.hex,
+                          backgroundColor: `${brandColor.hex}20`,
+                        }}
                       >
-                        <span>Dowiedz się więcej</span>
-                        <ArrowRight className="h-4 w-4 transition-transform group-hover/card:translate-x-1" />
-                      </Link>
-                    </div>
-                  </Card>
+                        {product.name.slice(0, 2).toUpperCase()}
+                      </div>
+                    )}
+
+                    <h3
+                      className="mobile-grow-title text-2xl sm:text-3xl font-semibold leading-tight"
+                      style={{ color: brandColor.hex }}
+                    >
+                      {product.name}
+                    </h3>
+                  </Link>
+
+                  {product.tagline && (
+                    <p className="mt-3 text-base sm:text-lg font-light text-white leading-snug line-clamp-3">
+                      {product.tagline}
+                    </p>
+                  )}
                 </div>
-              </CarouselItem>
-            );
-          })}
-        </CarouselContent>
-      </Carousel>
+
+                {/* Stopka karty z linkiem Learn More */}
+                <div className="mt-8 pt-4 border-t border-white/10 flex items-center justify-between">
+                  <Link
+                    className="inline-flex items-center gap-2 text-sm font-medium opacity-80 transition-opacity hover:opacity-100"
+                    style={{ color: brandColor.hex }}
+                    href={`/produkty/${product.slug}`}
+                  >
+                    <span>Dowiedz się więcej</span>
+                    <DentsuArrowIcon color={brandColor.hex} className="relative top-px h-3.5 w-2.5" />
+                  </Link>
+
+                  {product.websiteUrl && (
+                    <a
+                      href={product.websiteUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-white/40 hover:text-white transition-colors"
+                      aria-label={`Odwiedź stronę ${product.name}`}
+                    >
+                      <ExternalLink className="h-4 w-4" />
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 }

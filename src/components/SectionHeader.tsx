@@ -1,6 +1,5 @@
 import React from 'react';
 import { DentsuPlusIcon } from '@/components/icons/DentsuPlusIcon';
-import { cn } from '@/lib/utils';
 
 export interface SectionHeaderProps {
   children: React.ReactNode;
@@ -14,22 +13,21 @@ export function SectionHeader({
   children,
   colorClass = 'text-white',
   plusIconColor = 'text-lightGray',
-  className,
+  className = '',
   as: Component = 'h2',
 }: SectionHeaderProps) {
   return (
     <Component
-      className={cn(
-        'text-3xl lg:text-4xl font-semibold inline-flex items-start gap-4 sm:gap-5 leading-tight',
-        colorClass,
-        className
-      )}
+      className={`text-3xl lg:text-4xl font-semibold ${colorClass} inline-flex items-start gap-5 leading-tight ${className}`}
     >
       <DentsuPlusIcon
-        size={24}
-        className={cn('shrink-0 mt-1', plusIconColor)}
+        size={25}
+        className={`shrink-0 ${plusIconColor}`}
+        offsetY={6}
       />
       <span>{children}</span>
     </Component>
   );
 }
+
+export default SectionHeader;

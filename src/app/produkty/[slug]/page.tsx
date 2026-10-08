@@ -7,9 +7,6 @@ import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { client } from '@/sanity/lib/client';
 import { productBySlugQuery } from '@/sanity/lib/queries';
 
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
 import { SiteHeader } from '@/components/SiteHeader';
 import { getProductBrandColor } from '@/lib/productColors';
 
@@ -57,7 +54,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   const brandColor = getProductBrandColor(product.slug || product.name);
 
-  // Funkcja mapująca klocki z Sanity na komponenty React
+  // Funkcja mapująca klocki z Sanity na komponenty React z przekazaniem kolorów produktu
   const renderSection = (section: any) => {
     switch (section._type) {
       case 'challengesBlock':
@@ -66,6 +63,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             key={section._key}
             items={product.challenges}
             variant={section.variant}
+            colorClass={brandColor.className}
           />
         );
       case 'solutionsBlock':
@@ -74,6 +72,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
             key={section._key}
             items={product.solutions}
             variant={section.variant}
+            colorClass={brandColor.className}
+            brandHex={brandColor.hex}
           />
         );
       case 'gainsBlock':
@@ -83,6 +83,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
             items={product.gains}
             columns={section.columns}
             promotedIndex={section.promotedIndex}
+            colorClass={brandColor.className}
+            brandHex={brandColor.hex}
           />
         );
       case 'usageBlock':
@@ -91,6 +93,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
             key={section._key}
             items={product.usage}
             style={section.style}
+            colorClass={brandColor.className}
+            brandHex={brandColor.hex}
           />
         );
       case 'faqAccordionBlock':
@@ -99,6 +103,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             key={section._key}
             items={product.faq}
             defaultOpenFirst={section.defaultOpenFirst}
+            colorClass={brandColor.className}
           />
         );
       default:
@@ -111,7 +116,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
       <SiteHeader />
 
       <main className="min-h-screen pt-32 pb-24 px-6">
-        <div className="mx-auto max-w-5xl space-y-10">
+        <div className="mx-auto max-w-5xl space-y-12">
           {/* Nawigacja powrotna */}
           <div>
             <Link
@@ -123,10 +128,13 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </Link>
           </div>
 
-          {/* Hero produktu w stylu dentsuai.com z glowing card */}
-          <Card
-            glowColor={brandColor.hex}
-            className="p-8 sm:p-12 border border-white/15 bg-black/40 backdrop-blur-sm"
+          {/* Hero produktu w oryginalnym stylu lp-dentsu-ai */}
+          <div
+            className="group relative overflow-visible rounded-2xl border border-white/15 p-8 sm:p-12 backdrop-blur-sm shadow-2xl"
+            style={{
+              background: `radial-gradient(farthest-corner at 40px 40px, ${brandColor.hex}40 0%, rgba(16,16,16,0.85) 50%)`,
+              backgroundRepeat: 'no-repeat',
+            }}
           >
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8">
               {product.logo?.asset?.url ? (
@@ -152,9 +160,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
               )}
 
               <div className="space-y-3">
-                <Badge variant="outline" className="border-white/20 bg-white/5 text-xs uppercase tracking-wider">
+                <span className="inline-block rounded-full border border-white/20 bg-white/5 px-3 py-1 text-xs uppercase tracking-wider text-white/80 font-light backdrop-blur-sm">
                   Dentsu AI Stack
-                </Badge>
+                </span>
                 <h1
                   className="text-3xl sm:text-5xl font-semibold tracking-tight"
                   style={{ color: brandColor.hex }}
@@ -179,17 +187,16 @@ export default async function ProductPage({ params }: ProductPageProps) {
             )}
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Button
-                variant="default"
-                className="font-medium"
+              <button
+                type="button"
+                className="px-6 py-3 rounded-lg font-medium text-sm transition-colors duration-300 hover:bg-white hover:text-black cursor-pointer shadow-md"
                 style={{
                   backgroundColor: brandColor.hex,
-                  borderColor: brandColor.hex,
                   color: '#000000',
                 }}
               >
                 Umów Prezentację
-              </Button>
+              </button>
 
               {product.websiteUrl && (
                 <a
@@ -203,18 +210,36 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 </a>
               )}
             </div>
-          </Card>
+          </div>
 
-          {/* Dynamiczny układ sekcji */}
+          {/* Dynamiczny układ sekcji z kolorami produktu */}
           {product.sections && product.sections.length > 0 ? (
             product.sections.map((section: any) => renderSection(section))
           ) : (
             <div className="space-y-8">
-              <ChallengesBlock items={product.challenges} />
-              <SolutionsBlock items={product.solutions} />
-              <GainsBlock items={product.gains} />
-              <UsageBlock items={product.usage} />
-              <FaqAccordionBlock items={product.faq} />
+              <ChallengesBlock
+                items={product.challenges}
+                colorClass={brandColor.className}
+              />
+              <SolutionsBlock
+                items={product.solutions}
+                colorClass={brandColor.className}
+                brandHex={brandColor.hex}
+              />
+              <GainsBlock
+                items={product.gains}
+                colorClass={brandColor.className}
+                brandHex={brandColor.hex}
+              />
+              <UsageBlock
+                items={product.usage}
+                colorClass={brandColor.className}
+                brandHex={brandColor.hex}
+              />
+              <FaqAccordionBlock
+                items={product.faq}
+                colorClass={brandColor.className}
+              />
             </div>
           )}
         </div>

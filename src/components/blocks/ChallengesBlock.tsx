@@ -1,5 +1,5 @@
-import { SectionHeader } from '@/components/ui/section-header';
-import { Card } from '@/components/ui/card';
+import React from 'react';
+import { SectionHeader } from '@/components/SectionHeader';
 
 interface ChallengeItem {
   _key?: string;
@@ -12,18 +12,20 @@ export type ChallengesVariant = 'two-columns' | 'cards-alert' | 'minimal-list' |
 export interface ChallengesBlockProps {
   items?: ChallengeItem[];
   variant?: ChallengesVariant;
+  colorClass?: string;
 }
 
 export function ChallengesBlock({
   items,
   variant = 'two-columns',
+  colorClass = 'text-white',
 }: ChallengesBlockProps) {
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="py-12 border-t border-white/10">
+    <section className="py-12 border-t border-white/10 w-full">
       <div className="mb-8">
-        <SectionHeader colorClass="text-white" plusIconColor="text-[#adadad]">
+        <SectionHeader colorClass={colorClass} plusIconColor="text-lightGray">
           Z jakimi wyzwaniami się mierzysz?
         </SectionHeader>
       </div>
@@ -36,7 +38,7 @@ export function ChallengesBlock({
               className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 py-4 border-b border-white/10"
             >
               {item.header && (
-                <span className="font-medium text-white text-lg min-w-[220px]">
+                <span className={`font-medium text-lg min-w-[220px] ${colorClass}`}>
                   {item.header}
                 </span>
               )}
@@ -49,16 +51,16 @@ export function ChallengesBlock({
           ))}
         </ul>
       ) : (
-        /* Domyślny oraz cards-alert: eleganckie ciemne karty z obwódką w stylu dentsuai */
+        /* Kontenery bg-almostBlack/85 z backdrop-blur w stylu lp-dentsu-ai */
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {items.map((item, idx) => (
-            <Card
+            <div
               key={item._key || idx}
-              className="bg-almostBlack/85 border border-white/15 p-6 sm:p-8"
+              className="rounded-2xl border border-white/15 bg-almostBlack/85 backdrop-blur-sm p-6 sm:p-8"
             >
               {item.header && (
                 <h3 className="text-xl font-medium text-white mb-3 flex items-center gap-2.5">
-                  <span className="text-rose-400 font-normal">/</span>
+                  <span className={`${colorClass} font-normal`}>/</span>
                   {item.header}
                 </h3>
               )}
@@ -67,7 +69,7 @@ export function ChallengesBlock({
                   {item.body}
                 </p>
               )}
-            </Card>
+            </div>
           ))}
         </div>
       )}

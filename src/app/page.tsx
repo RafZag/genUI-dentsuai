@@ -2,7 +2,6 @@ import { client } from '@/sanity/lib/client';
 import { homePageQuery } from '@/sanity/lib/queries';
 import { PageBuilder } from '@/components/PageBuilder';
 import { SiteHeader } from '@/components/SiteHeader';
-import { Button } from '@/components/ui/button';
 
 export const dynamic = 'force-dynamic';
 
@@ -29,9 +28,12 @@ export default async function HomePage() {
             Samodzielne aplikacje. Jeden zintegrowany ekosystem AI.
           </p>
           <div className="flex items-center gap-4 mt-2">
-            <Button variant="glass" size="lg" className="rounded-xl">
+            <button
+              type="button"
+              className="px-6 py-3 backdrop-blur-sm bg-white/20 text-white rounded-lg border border-white/40 font-light transition-colors duration-300 hover:bg-[#00ff84] hover:text-black hover:border-[#00ff84] cursor-pointer"
+            >
               Umów Demo
-            </Button>
+            </button>
           </div>
         </section>
 
