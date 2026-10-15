@@ -1,0 +1,18 @@
+{
+  "blog": {
+    "header": "Blog",
+    "subtitle": "",
+    "sections": [
+      {
+        "title": "Sekcja 1",
+        "subtitle": "Podtytuł 1",
+        "description": "Opis sekcji 1."
+      },
+      {
+        "title": "Sekcja 2",
+        "subtitle": "Podtytuł 2",
+        "description": "Opis sekcji 2."
+      }
+    ]
+  }
+}

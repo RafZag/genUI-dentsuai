@@ -1,0 +1,100 @@
+{
+  "team": {
+    "header": "People Behind AI Products",
+    "subtitle": "",
+    "sections": [
+      {
+        "title": "Section 1",
+        "subtitle": "We sit at the intersection of marketing strategy, creative technology, and data science-and we build AI products that reflect that.",
+        "description": "Our team brings together people who have spent years working on real campaigns, for real brands, across every discipline that modern marketing demands. We don't build tools in isolation from the work - we build them because we do the work, and we know exactly where the gaps are. Every product we ship started as a problem one of us encountered on a real brief."
+      },
+      {
+        "title": "Management",
+        "subtitle": "Management",
+        "description": "",
+        "members": [
+          {
+            "name": "Bartosz Malina",
+            "role": "Head of AI",
+            "photo": "BM_big.png",
+            "hint": "This is placeholder copy for a short personal intro. It can explain what this person focuses on and the kind of ideas they like to push forward."
+          },
+          {
+            "name": "Bartłomiej Główczyński",
+            "role": "AI Expert",
+            "photo": "BG_big.png",
+            "hint": "This is placeholder copy for a short personal intro. It can explain what this person focuses on and the kind of ideas they like to push forward."
+          },
+          {
+            "name": "Monika Greszta",
+            "role": "Sr. Project Manager",
+            "photo": "MG_big.png",
+            "hint": "This is placeholder copy for a short personal intro. It can explain what this person focuses on and the kind of ideas they like to push forward."
+          }
+        ]
+      },
+      {
+        "title": "Developers",
+        "subtitle": "Developers",
+        "description": "",
+        "members": [
+          {
+            "name": "Marcin Palinka",
+            "role": "Tech Lead",
+            "photo": "MPal_big.png",
+            "hint": "This is placeholder copy for a short personal intro. It can explain what this person focuses on and the kind of ideas they like to push forward."
+          },
+
+          {
+            "name": "Kamil Gogola",
+            "role": "Tech Lead, Sr. AI Developer",
+            "photo": "KG_big.png",
+            "hint": "This is placeholder copy for a short personal intro. It can explain what this person focuses on and the kind of ideas they like to push forward."
+          },
+          {
+            "name": "Rafał Chojnowski",
+            "role": "Frontend Developer",
+            "photo": "RC_big.png",
+            "hint": "This is placeholder copy for a short personal intro. It can explain what this person focuses on and the kind of ideas they like to push forward."
+          },
+          {
+            "name": "Krzysztof Jarek",
+            "role": "Jr. AI Developer",
+            "photo": "KJ_big.png",
+            "hint": "This is placeholder copy for a short personal intro. It can explain what this person focuses on and the kind of ideas they like to push forward."
+          }
+        ]
+      },
+      {
+        "title": "dentsu Lab",
+        "subtitle": "dentsu Lab",
+        "description": "",
+        "members": [
+          {
+            "name": "Michał Pęczalski",
+            "role": "Head of Creative Technology",
+            "photo": "MP_big.png",
+            "hint": "This is placeholder copy for a short personal intro. It can explain what this person focuses on and the kind of ideas they like to push forward."
+          },
+          {
+            "name": "Łukasz Skwara",
+            "role": "Creative Technologist",
+            "photo": "LS_big.png",
+            "hint": "This is placeholder copy for a short personal intro. It can explain what this person focuses on and the kind of ideas they like to push forward."
+          },
+          {
+            "name": "Rafał Zagórny",
+            "role": "Creative Technologist",
+            "photo": "RZ_big.png",
+            "hint": "This is placeholder copy for a short personal intro. It can explain what this person focuses on and the kind of ideas they like to push forward."
+          }
+        ]
+      },
+      {
+        "title": "Section 1",
+        "subtitle": "We're a small team doing work at the edge of what's possible in AI and marketing. If that's where you want to be too - check our open roles.",
+        "description": ""
+      }
+    ]
+  }
+}

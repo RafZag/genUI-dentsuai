@@ -1,0 +1,225 @@
+{
+  "nav": {
+    "logo": "dentsu AI Stack",
+    "products": "Produkty",
+    "philosophy": "Filozofia",
+    "team": "Zespół",
+    "podcast": "Podcast",
+    "blog": "Blog",
+    "lab": "Lab",
+    "contact": "Kontakt"
+  },
+  "common": {
+    "language": "Język",
+    "bookDemo": "Umów demo",
+    "playVideo": "Zobacz wideo",
+    "learnMore": "Dowiedz się więcej",
+    "comingSoon": "Wkrótce dostępne."
+  },
+  "HomepageHero": {
+    "title": "AI, które działa w rytmie<br />Twojego biznesu.",
+    "subtitle": "Samodzielne aplikacje. Jeden zintegrowany system AI."
+  },
+  "philosophySlider": {
+    "previousAriaLabel": "Poprzednia filozofia",
+    "nextAriaLabel": "Następna filozofia",
+    "readMore": "Dowiedz się więcej.",
+    "items": [
+      {
+        "title": "dentsu-in-the-loop.",
+        "description": "Nasi eksperci nie są obserwatorami systemu - są jego częścią, w każdym punkcie, gdzie wynik AI staje się decyzją biznesową."
+      },
+      {
+        "title": "Własne rozwiązania AI.",
+        "description": "Zbudowaliśmy je od zera. Kontrolujemy metodologię, sposób oceny wyników i roadmapę."
+      },
+      {
+        "title": "AI coraz lepsze z każdym projektem.",
+        "description": "Każda analiza sprawia, że następna jest dokładniejsza - skalibrowana głębiej pod Twoją kategorię, Twój rynek, specyficzne wzorce Twojej marki."
+      },
+      {
+        "title": "Bezpieczeństwo klasy korporacyjnej.",
+        "description": "Pełna poufność i izolacja danych - wbudowane od podstaw."
+      }
+    ]
+  },
+  "podcastSection": {
+    "title": "Wykasuj hype. Słuchaj praktyków. Zostań w grze.",
+    "description": "Ci, którzy budują AI, marketerzy, którzy już zbierają z niego owoce - i ci, którzy kształtują warunki jego rozwoju. Przy jednym stole. Bez wizjonerstwa. Bez żargonu. Tylko to, co naprawdę działa.",
+    "listenToPodcast": "Już wkrótce",
+    "latestEpisode": "Ostatni odcinek"
+  },
+  "labSection": {
+    "title": "Miejsce, gdzie rodzą się przełomowe produkty.",
+    "description": "Dentsu Lab Warsaw to nasz zespół badawczo-prototypowy. To tu testujemy nowe pomysły - na długo przed tym, zanim staną się realnymi produktami. Jeśli masz wyzwanie, którego rynek jeszcze nie rozwiązuje, właśnie od tego byśmy zaczęli.",
+    "readMore": "Dowiedz się więcej."
+  },
+  "teamSection": {
+    "title": "Zespół dentsu AI",
+    "moreAboutUs": "Dowiedz się więcej",
+    "members": [
+      {
+        "name": "Bartosz Malina",
+        "role": "Head of AI",
+        "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+      },
+      {
+        "name": "Bartłomiej Główczyński",
+        "role": "AI Expert",
+        "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+      },
+      {
+        "name": "Monika Greszta",
+        "role": "Sr. Project Manager",
+        "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+      },
+      {
+        "name": "Marcin Palinka",
+        "role": "Tech Lead",
+        "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+      },
+      {
+        "name": "Michał Pęczalski",
+        "role": "Head of Creative Technology",
+        "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+      }
+    ]
+  },
+  "blogSection": {
+    "title": "Blog",
+    "allArticles": "Wszystkie artykuły",
+    "posts": [
+      {
+        "imageAlt": "Wpis blogowy 1",
+        "title": "Tytuł najnowszego wpisu",
+        "excerpt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+      },
+      {
+        "imageAlt": "Wpis blogowy 2",
+        "title": "Tytuł poprzedniego wpisu",
+        "excerpt": "Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+      },
+      {
+        "imageAlt": "Wpis blogowy 3",
+        "title": "Tytuł starszego wpisu",
+        "excerpt": "Laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat."
+      }
+    ]
+  },
+  "faqSection": {
+    "title": "FAQ",
+    "items": [
+      {
+        "question": "Czym dokładnie jest AI od dentsu - i czym różni się od narzędzi takich jak ChatGPT czy inne platformy AI?",
+        "answer": "AI od dentsu to zestaw siedmiu własnych produktów AI zbudowanych specjalnie dla marketingu - od śledzenia tego, co chatboty AI mówią o Twojej marce, przez analizę opinii konsumentów w skali, po przyspieszenie produkcji kreatywnej. W odróżnieniu od ogólnych narzędzi AI, nasze produkty są zbudowane od zera przez praktyków marketingu, wytrenowane na realnych danych kampanijnych i dostarczane jako usługa zarządzana - z naszymi ekspertami wbudowanymi w każdy etap. Nie logujesz się i nie działasz sam. Konfigurujemy, uruchamiamy i interpretujemy wyniki razem z Tobą."
+      },
+      {
+        "question": "Czy muszę być obecnym klientem dentsu, żeby korzystać z tych produktów?",
+        "answer": "Nie. Nasze produkty AI są dostępne dla każdej marki - niezależnie od tego, czy już współpracujesz z dentsu. Najlepszym punktem startowym jest 30-minutowe demo, na którym pokazujemy produkt działający na Twojej kategorii i Twojej konkurencji. Bez zobowiązań."
+      },
+      {
+        "question": "Czy to subskrypcja SaaS czy coś innego?",
+        "answer": "To usługa zarządzana, a nie platforma samoobsługowa. Nie sprzedajemy loginów. Nasi specjaliści konfigurują produkt pod Twoją markę, prowadzą analizę, interpretują wyniki i - tam, gdzie to możliwe - przekazują je bezpośrednio do zespołów dentsu pracujących nad Twoimi kampaniami. Dostajesz wnioski gotowe do działania, nie dashboard do obsługi."
+      },
+      {
+        "question": "Jak chronione są moje dane i czy będą wykorzystywane do trenowania modeli AI?",
+        "answer": "Twoje dane nigdy nie opuszczają Twojego izolowanego środowiska. Twoje briefy, prompty, treści i wyniki analiz nigdy nie są wykorzystywane do trenowania publicznych modeli. Każde wdrożenie działa w dedykowanej instancji z dostępem ograniczonym do wskazanych użytkowników. Nasza architektura jest gotowa na weryfikację prawną i bezpieczeństwa."
+      },
+      {
+        "question": "Jak szybko możemy zacząć i jak wygląda proces współpracy?",
+        "answer": "Pierwsze demo trwa 30 minut i niczego od Ciebie nie wymaga z góry. Następnie ustalamy cel biznesowy i zakres. Realny harmonogram przedstawiamy na etapie demo, nie dopiero po podpisaniu umowy."
+      }
+    ]
+  },
+  "contactSection": {
+    "title": "Skontaktuj się z nami",
+    "description": "Cześć, jestem Bartek - Twój główny kontakt od AI w dentsu. Masz pytanie? Chcesz umówić demo? Daj mi znać bezpośrednio. Odpowiem Ci w ciągu jednego dnia roboczego.",
+    "emailPlaceholder": "Twój e-mail",
+    "questionPlaceholder": "W czym możemy pomóc?",
+    "submitQuestion": "Wyślij",
+    "sendingQuestion": "Wysyłanie...",
+    "successMessage": "Dziękujemy. Twoja wiadomość została wysłana.",
+    "errorMessage": "Nie udało się wysłać wiadomości. Spróbuj ponownie.",
+    "requiredFieldsMessage": "Uzupełnij adres e-mail i treść wiadomości.",
+    "invalidEmailMessage": "Podaj poprawny adres e-mail.",
+    "termsConsent": "Wyrażam zgodę na przesyłanie przez Dentsu Polska Sp. z o.o. informacji handlowych, w tym informacji o oferowanych produktach i usługach, za pomocą poczty elektronicznej na wskazany przeze mnie adres e-mail.",
+    "notConfiguredMessage": "Formularz kontaktowy jest chwilowo niedostępny. Spróbuj ponownie później.",
+    "sendFailedMessage": "Nie udało się teraz wysłać wiadomości. Spróbuj ponownie za chwilę.",
+    "internalErrorMessage": "Wystąpił błąd po naszej stronie. Spróbuj ponownie."
+  },
+  "clientsSection": {
+    "title": "Zaufali nam",
+    "ariaLabel": "Logotypy klientów"
+  },
+  "footer": {
+    "ourPolicies": "Nasze polityki",
+    "policyLinks": ["Polityka prywatności", "Responsible Disclosure"],
+    "siteMap": "Mapa strony",
+    "siteMapLinks": ["Filozofia", "Zespół", "Podcast", "Blog", "Lab", "Kontakt"],
+    "Products": "Produkty",
+    "productLinks": [
+      "LLM Brand Auditor",
+      "Echo",
+      "Sniffer",
+      "Context Hub",
+      "Trend Hunter",
+      "Aura",
+      "Cadabra",
+      "Hyde Park",
+      "Content Creator"
+    ],
+    "contact": "Kontakt",
+    "company": "Dentsu Polska",
+    "address": "ul. Czerska 12, 00-732 Warszawa",
+    "phone": "+48 22 316 9000",
+    "letsConnect": "Bądźmy w kontakcie",
+    "copyright": "Prawa autorskie (c) 2026"
+  },
+  "products": {
+    "BA": {
+      "title": "LLM Brand Auditor",
+      "slogan": "Widoczność marki w AI.",
+      "description": "Twoi klienci przestali wyszukiwać. Zaczęli pytać. Wiedz, co chatboty AI mówią o Twojej marce i popraw to."
+    },
+    "TH": {
+      "title": "Trend Hunter",
+      "slogan": "Wykrywanie sygnałów kulturowych.",
+      "description": "Twoja konkurencja już obserwuje kolejny trend. Bądź pierwszy i planuj treści w oparciu o dane, nie intuicję."
+    },
+    "CH": {
+      "title": "Context Hub",
+      "slogan": "Baza wiedzy i Wirtualny Asystent Twojej organizacji.",
+      "description": "Kluczowe informacje giną w dziesiątkach systemów i dokumentów. Zapytaj, zamiast szukać - i dostań odpowiedź, nie listę plików."
+    },
+    "SN": {
+      "title": "Sniffer",
+      "slogan": "Wiedza o rynku, zanim się spóźnisz.",
+      "description": "Otoczenie rynkowe zmienia się codziennie. Wiedz pierwszy, co dzieje się wokół Twojej marki - i pytaj o wszystko, co chcesz mieć pod obserwacją."
+    },
+    "CC": {
+      "title": "Content Creator",
+      "slogan": "Produkcja treści na dużą skalę.",
+      "description": "Produkuj, personalizuj i zarządzaj contentem w jednym modułowym systemie AI - Ty decydujesz, które moduły potrzebujesz, system zajmuje się resztą."
+    },
+    "EC": {
+      "title": "Echo",
+      "slogan": "Pogłębiona analiza sentymentu i opinii.",
+      "description": "Problemem nie jest brak danych. Jest nim ich nadmiar. Zamień tysiące opinii w jasne, gotowe do działania insighty."
+    },
+    "AU": {
+      "title": "Aura",
+      "slogan": "Prawda ukryta w danych, podana z precyzją eksperta.",
+      "description": "Wyjdź poza to, co widzą standardowe narzędzia i odkryj zależności i szanse, które mogą rozwinąć Twój biznes."
+    },
+    "CA": {
+      "title": "Cadabra",
+      "slogan": "Prompt engineering i ochrona IP.",
+      "description": "Przekształć surowe prompty w precyzyjny kod kreatywny, przechowuj je bezpiecznie i utrzymuj spójność marki na każdym generowanym zasobie."
+    },
+    "HP": {
+      "title": "Hyde Park",
+      "slogan": "Ideacja kreatywna, tylko szybciej.",
+      "description": "Przekształć założenia kampanii w precyzyjne briefy egzekucyjne i setki unikalnych kreatywnych haków – trafiaj szybciej na właściwy pomysł."
+    }
+  }
+}

@@ -35,7 +35,11 @@ export const homePageQuery = groq`
 `;
 
 export const productBySlugQuery = groq`
-  *[_type == "product" && slug.current == $slug][0]{
+  *[_type == "product" && (
+    slug.current == $slug ||
+    ($slug == "llm-brand-auditor" && slug.current == "llm-brand-audithor") ||
+    ($slug == "llm-brand-audithor" && slug.current == "llm-brand-auditor")
+  )][0]{
     _id,
     name,
     tagline,

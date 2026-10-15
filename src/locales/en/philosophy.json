@@ -1,0 +1,36 @@
+{
+  "philosophy": {
+    "header": "AI by dentsu",
+    "subtitle": "",
+    "sections": [
+      {
+        "title": "Intro",
+        "subtitle": "AI by dentsu is not software you log into. It's intelligence designed from the ground up - with dentsu-in-the-loop built into every step - plugged into the strategists, creatives, and media specialists working for your brand.",
+        "description": "Each of our products solves a distinct bottleneck in modern marketing - from brand visibility in AI, through deep consumer understanding, to content production at scale. Built by us, not resold. Plugged into each other. Plugged into our teams."
+      },
+      {
+        "title": "Proprietary technology.",
+        "subtitle": "Built by practitioners, for your business.",
+        "description": "Generic AI solves generic, \"average\" problems for an average user across every industry. Off-the-shelf tools give your competitors the exact same capabilities you have. AI by dentsu is different. We built it from scratch. We control the methodology, the evaluation framework, and the roadmap. Because we own the stack, you get those advantages without the cost, time, or specialist team it would take to build it alone.And you're not tied to the pricing changes, policy shifts, or strategic priorities of a single global tech provider. When your business needs the system to change, it changes. "
+      },
+      {
+        "title": "dentsu-in-the-loop.",
+        "subtitle": "AI generates. dentsu interprets. You decide.",
+        "description": "dentsu-in-the-loop is not an add-on - it's the principle behind every product we build. Our experts are not observers of the system - they are part of it, at every point where AI output becomes a business decision. Consumer insights flow directly into the media, creative, and CXM teams working for your brand. Findings become action on the same timeline. You get conclusions grounded in both data and expertise - from a team that understands your business."
+      },
+      {
+        "title": "Smarter every time.",
+        "subtitle": "Our AI doesn't guess. It learns - specifically for you.",
+        "description": "At the core of our AI products lies the dentsu Data Platform - our agency's digital brain, built on knowledge from real campaigns, performance data, and the collective expertise of our strategists, creative teams, and media specialists. It's the foundation that makes our AI products smarter from day one - and keeps them getting smarter with every engagement. Every output our AI produces for you feeds back into your own dedicated instance on the Data Platform. Not into a shared pool. Not into anyone else's data. Into yours. This means every analysis we run makes the next one more precise - calibrated deeper to your category, your market, your brand's specific patterns."
+      },
+
+      {
+        "title": "Enterprise-grade security.",
+        "subtitle": "Your data works for you. Only you.",
+        "description": "Full confidentiality and data isolation - by design. Your briefs, prompts, content and analysis results are never used to train public AI models. Your data stays inside our isolated environments, work exclusively for your outcomes, and never become training fuel for the systems your competitors also use. Access is limited to named users only. Our setup is built to clear legal and security reviews - so you can use it with confidence, not with caveats."
+      }
+    ],
+    "CTA": "Let’s talk about where AI by dentsu can grow your business.",
+    "bookDemo": "Book a demo"
+  }
+}

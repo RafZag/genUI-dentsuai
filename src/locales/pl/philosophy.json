@@ -1,0 +1,39 @@
+{
+  "philosophy": {
+    "header": "AI od dentsu",
+    "subtitle": "",
+    "sections": [
+      {
+        "title": "Intro",
+        "subtitle": "AI od dentsu to nie oprogramowanie, do którego się logujesz. To inteligencja zaprojektowana od podstaw - z dentsu-in-the-loop wbudowanym w każdy etap - połączona ze strategami, kreatywnymi i specjalistami mediowymi pracującymi dla Twojej marki.",
+        "description": "Każdy z naszych produktów rozwiązuje inne wąskie gardło współczesnego marketingu - od widoczności marki w AI, przez głębokie rozumienie opinii konsumentów, po produkcję treści w skali. Zbudowane przez nas, nie odsprzedane. Połączone ze sobą. Połączone z naszymi zespołami."
+      },
+      {
+        "title": "Własne rozwiązania AI.",
+        "subtitle": "Zbudowane przez praktyków, dla Twojego biznesu.",
+        "icon": "philo_icon1.png",
+        "description": "Generyczne AI rozwiązuje generyczne, \"przeciętne\" problemy przeciętnego użytkownika ze wszystkich branż. Gotowe narzędzia dają Twojej konkurencji dokładnie te same zdolności co Tobie. AI od dentsu jest inne. Zbudowaliśmy je od zera. Kontrolujemy metodologię, sposób oceny wyników i roadmapę. Ponieważ budujemy własne rozwiązania, uzyskujesz te przewagi bez kosztów, czasu i zespołu specjalistów, których wymagałoby zbudowanie tego samemu. I nie jesteś uzależniony od zmian cen, zmian polityk ani strategicznych priorytetów jednego globalnego dostawcy technologii. Gdy Twój biznes wymaga zmiany systemu - system się zmienia. "
+      },
+      {
+        "title": "Coraz lepsze z każdym projektem.",
+        "subtitle": "Nasze AI nie zgaduje. Uczy się - konkretnie dla Ciebie.",
+        "icon": "philo_icon2.png",
+        "description": "W centrum naszych produktów AI leży dentsu Data Platform - cyfrowy mózg naszej agencji, oparty na wiedzy z realnych kampanii, danych efektywnościowych oraz zbiorowej ekspertyzy naszych strategów, zespołów kreatywnych i specjalistów mediowych. To fundament, który sprawia, że nasze produkty AI są mądrzejsze od pierwszego dnia - i stają się jeszcze mądrzejsze z każdym projektem. Każdy wynik, który nasze AI produkuje dla Ciebie, wraca do Twojej własnej dedykowanej instancji na Data Platform. Nie do wspólnej puli. Nie do cudzych danych. Do Twojej. Oznacza to, że każda analiza, którą wykonujemy, sprawia, że następna jest dokładniejsza - skalibrowana głębiej pod Twoją kategorię, Twój rynek, specyficzne wzorce Twojej marki."
+      },
+      {
+        "title": "dentsu-in-the-loop.",
+        "subtitle": "AI generuje. dentsu interpretuje. Ty decydujesz.",
+        "icon": "philo_icon3.png",
+        "description": "dentsu-in-the-loop to nie dodatek - to zasada, na której zbudowaliśmy każdy produkt. Nasi eksperci nie są obserwatorami systemu - są jego częścią, w każdym punkcie, gdzie wynik AI staje się decyzją biznesową. Insighty konsumenckie trafiają bezpośrednio do zespołów mediowych, kreatywnych i CXM pracujących dla Twojej marki. Wnioski stają się działaniem w tym samym harmonogramie. Dostajesz wnioski zakorzenione zarówno w danych, jak i w ekspertyzie - od zespołu, który rozumie Twój biznes."
+      },
+      {
+        "title": "Bezpieczeństwo klasy korporacyjnej.",
+        "subtitle": "Twoje dane pracują dla Ciebie. Tylko dla Ciebie.",
+        "icon": "philo_icon4.png",
+        "description": "Pełna poufność i izolacja danych - wbudowane od podstaw. Twoje briefy, prompty, treści i wyniki analiz nigdy nie są wykorzystywane do trenowania publicznych modeli AI. Twoje dane pozostają w naszych izolowanych środowiskach, pracują wyłącznie na Twoje wyniki i nigdy nie stają się paliwem treningowym dla systemów, których używa też Twoja konkurencja. Dostęp wyłącznie dla wskazanych użytkowników. Nasza architektura jest zbudowana tak, by przechodzić weryfikację prawną i bezpieczeństwa - żebyś korzystał z pewnością, nie z zastrzeżeniami."
+      }
+    ],
+    "CTA": "Porozmawiajmy o tym, gdzie AI od dentsu może rozwinąć Twój biznes.",
+    "bookDemo": "Umów demo"
+  }
+}

@@ -1,0 +1,550 @@
+{
+  "productPages": {
+    "llmBrandAuditor": {
+      "metadata": {
+        "title": "LLM Brand Auditor | dentsu AI Stack",
+        "description": "Widoczność marki w AI."
+      },
+      "hero": {
+        "logoAlt": "Logo LLM Brand Auditor",
+        "tagline": "Zarządzaj widocznością marki w erze AI.",
+        "bookDemo": "Umów demo",
+        "playVideo": "Zobacz wideo"
+      },
+      "challenge": {
+        "title": "Wyzwanie",
+        "subtitle": "Nowy ekosystem rekomendacji.",
+        "descriptionBefore": "Tradycyjne wyszukiwarki ustępują miejsca asystentom AI. Twoi klienci coraz częściej szukają opinii i produktów wewnątrz ChatGPT, Gemini czy Perplexity. Jeśli Twojej marki tam nie ma lub AI podaje błędne lub niepełne dane -",
+        "highlight": "tracisz udział w rynku",
+        "descriptionAfter": "o których istnieniu nawet nie wiesz."
+      },
+      "solution": {
+        "title": "Rozwiązanie od dentsu - LLM Brand Auditor",
+        "description": "System AI, który sprawdza, na ile strona www jest gotowa do cytowania i indeksowania przez systemy generatywnej AI, oraz mierzy i optymalizuje widoczność marki w odpowiedziach generowanych przez popularne chatboty AI. <br/><br/>Dwa moduły. Jeden pełny obraz Twojej widoczności w AI.",
+        "readMore": "Czytaj więcej",
+        "items": [
+          {
+            "title": "AI Readiness - Jakościowy audyt witryny.",
+            "description": "Sprawdzamy, czy Twoja strona jest czytelna dla nowej generacji crawlerów AI. Wystarczy nam adres URL - wskażemy konkretne zmiany w kodzie i treściach, dzięki którym witryna stanie się wiarygodnym źródłem danych dla asystentów AI."
+          },
+          {
+            "title": "Audyt LLM - Monitoring marki w chatbotach AI.",
+            "description": "Przekształcamy słowa kluczowe w pytania, które faktycznie zadają klienci, a potem śledzimy, jak odpowiadają ChatGPT, Perplexity czy Google AIO. Widzisz swój share of voice względem konkurencji, to, co AI naprawdę mówi o Twoich produktach i które zewnętrzne źródła - Reddit, YouTube, niszowe fora - kształtują te odpowiedzi. Wskażemy luki w treściach, które musisz uzupełnić, aby Twoja marka zaczęła dominować w odpowiedziach AI."
+          }
+        ]
+      },
+      "gains": {
+        "title": "Co zyskujesz",
+        "items": [
+          {
+            "iconAlt": "Ikona komputera",
+            "title": "Raport gotowości AI.",
+            "description": "Nasz system nie tylko mówi „nie ma Cię w AI”, ale wskazuje dokładnie, jakie aspekty techniczne musisz usprawnić i jakie treści stworzyć, aby się tam pojawić.",
+            "readMore": "Czytaj więcej"
+          },
+          {
+            "iconAlt": "Ikona pucharu",
+            "title": "Przewagę w nowym kanale rekomendacji.",
+            "description": "Zapewnienie silnej obecności marki tam, gdzie zapadają kluczowe decyzje zakupowe nowej generacji użytkowników, którzy odchodzą od tradycyjnych wyszukiwarek.",
+            "readMore": "Czytaj więcej"
+          },
+          {
+            "iconAlt": "Ikona mikrofonu",
+            "title": "Pełna kontrola narracji.",
+            "description": "Wiesz, jak często Twoja marka pojawia się w odpowiedziach na tle najważniejszych konkurentów i co modele AI mówią o Twoich produktach.",
+            "readMore": "Czytaj więcej"
+          },
+          {
+            "iconAlt": "Ikona zegara",
+            "title": "Oszczędność czasu.",
+            "description": "Tygodnie ręcznego promptowania i zrzutów ekranu zamieniają się w jeden skonsolidowany raport - z priorytetowymi zmianami, które zespół może zacząć wdrażać tego samego dnia.",
+            "readMore": "Czytaj więcej"
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Kiedy stosować produkt?",
+        "items": [
+          {
+            "title": "Przed kampanią.",
+            "description": "Zanim ruszy nowa komunikacja, zrozum, jak AI postrzega dziś Twoją markę i co zmienić w pierwszej kolejności, żeby kampania zadziałała. "
+          },
+          {
+            "title": "Launch produktu.",
+            "description": "Zadbaj, żeby nowe produkty były poprawnie indeksowane i polecane przez asystentów AI od pierwszego dnia, nie sześć miesięcy po launchu."
+          },
+          {
+            "title": "Zarządzanie kryzysem.",
+            "description": "Szybko wykrywaj halucynacje AI lub negatywne narracje o Twojej marce, zanim rozniosą się po wszystkich głównych chatbotach."
+          },
+          {
+            "title": "Ciągła optymalizacja.",
+            "description": "Obserwuj, jak zmieniają się odpowiedzi AI w miarę aktualizacji treści na stronie (AEO/GEO) - i utrzymuj przewagę, którą właśnie zbudowałeś."
+          }
+        ]
+      },
+      "whyUs": {
+        "title": "Dlaczego my?",
+        "items": [
+          {
+            "title": "Rekomendacje zamiast surowych danych",
+            "description": "Nasz system nie tylko pokazuje brak obecności w AI; wskazuje dokładnie, jakie treści trzeba stworzyć, aby się tam pojawić."
+          },
+          {
+            "title": "Ekosystem dentsu",
+            "description": "Dane z audytu trafiają bezpośrednio do naszych zespołów mediowych i kreatywnych, które mogą od razu wdrażać optymalizacje treści."
+          },
+          {
+            "title": "Bezpieczeństwo klasy enterprise",
+            "description": "Gwarantujemy pełną poufność i izolację danych. Twoje zasoby nie są używane do trenowania publicznych modeli AI, a dostęp mają wyłącznie upoważnieni użytkownicy."
+          }
+        ]
+      },
+      "faq": {
+        "title": "FAQ",
+        "items": [
+          {
+            "question": "Moja marka dobrze pozycjonuje się w Google. Dlaczego widoczność w AI ma znaczenie? ",
+            "answer": "Pozycja w Google i widoczność w AI to dwie oddzielne rzeczy. Kiedy ktoś pyta ChatGPT, Perplexity czy Gemini o rekomendację produktu, odpowiedź nie wynika z Twojej pozycji w Google - pochodzi z tego, czego modele AI nauczyły się o Twojej marce z różnych źródeł w sieci. Marka, która dominuje w tradycyjnym wyszukiwaniu, może być całkowicie nieobecna w odpowiedziach AI. LLM Brand Auditor mierzy dokładnie tę lukę i mówi, co z nią zrobić."
+          },
+          {
+            "question": "Co dokładnie sprawdza LLM Brand Auditor i co otrzymuję na końcu? ",
+            "answer": "Produkt działa w dwóch modułach. Pierwszy - AI Readiness - audytuje Twoją stronę i sprawdza czy jest zbudowana w sposób, który crawlery AI mogą odczytać, zaindeksować i cytować. Drugi - Audyt LLM - zamienia Twoje słowa kluczowe w realne pytania użytkowników i śledzi, jak odpowiadają ChatGPT, Gemini, Claude, Perplexity i Google AIO: jak często pojawia się Twoja marka, co o niej mówią i gdzie są luki. Otrzymujesz skonsolidowany raport z priorytetową listą zmian technicznych i contentowych - gotowy do briefu dla zespołu tego samego dnia. "
+          },
+          {
+            "question": "Czy AI może mówić o mojej marce nieprawdziwe rzeczy i skąd miałbym to wiedzieć? ",
+            "answer": "Tak. Jest to jedno z najbardziej niedocenianych ryzyk w marketingu ery AI. Modele AI mogą generować błędne, nieaktualne lub wprowadzające w błąd informacje o Twojej marce, produktach czy cenach - zjawisko to nazywa się halucynacją. Bez systematycznego monitoringu te błędy rozprzestrzeniają się po cichu we wszystkich głównych chatbotach, kształtując decyzje zakupowe, zanim w ogóle dowiesz się o problemie. LLM Brand Auditor wykrywa takie narracje wcześnie - żebyś mógł działać, zanim się rozrosną."
+          },
+          {
+            "question": "Czy to platforma, do której się loguję, czy usługa realizowana przez Wasz zespół? ",
+            "answer": "To usługa zarządzana. Nie logujesz się i nie działasz samodzielnie. Nasi specjaliści konfigurują audyt pod Twoją markę, kategorię i konkurentów i przeprowadzają analizę. Dostajesz wnioski gotowe do działania, nie dashboard do obsługi."
+          },
+          {
+            "question": "Jak chronione są moje dane podczas audytu?",
+            "answer": "Pełna poufność i izolacja danych są wbudowane w architekturę. Twoje briefy, słowa kluczowe i wyniki analiz nigdy nie są wykorzystywane do trenowania publicznych modeli AI. Każde wdrożenie działa w dedykowanym środowisku z dostępem ograniczonym do wskazanych użytkowników. Nasza architektura jest gotowa na weryfikację prawną i bezpieczeństwa - żebyś korzystał z pewnością, nie z zastrzeżeniami. "
+          }
+        ]
+      },
+      "download": {
+        "title": "Pobierz materiały",
+        "link": "dentsuai_LLMBrandAuditor_pl.zip"
+      },
+      "bookDemo": {
+        "title": "Umów demo",
+        "link": "#"
+      }
+    },
+    "aura": {
+      "title": "Aura",
+      "description": "Prawda ukryta w danych, dostarczana z ekspercką precyzją.",
+      "commingSoon": "System AI, który prowadzi pogłębione badania strategiczne, docierając do zależności i szans ukrytych w danych, których nie widzą standardowe narzędzia.",
+      "metadata": {
+        "title": "Aura | dentsu AI Stack",
+        "description": "Prawda ukryta w danych, dostarczana z ekspercką precyzją."
+      },
+      "hero": {
+        "logoAlt": "Aura Logo",
+        "tagline": "",
+        "bookDemo": "Umów demo",
+        "playVideo": "Zobacz video"
+      }
+    },
+    "cadabra": {
+      "title": "Cadabra",
+      "description": "Prompt engineering i ochrona IP.",
+      "commingSoon": "System AI, który przekształca surowe prompty w precyzyjny, chroniony kod kreatywny, zabezpiecza Twoją własność intelektualną i dba o to, by każdy generowany zasób pozostawał zgodny z wytycznymi marki.",
+      "metadata": {
+        "title": "Cadabra | dentsu AI Stack",
+        "description": "Prompt engineering i ochrona IP."
+      },
+      "hero": {
+        "logoAlt": "Cadabra Logo",
+        "tagline": "",
+        "bookDemo": "Umów demo",
+        "playVideo": "Zobacz video"
+      }
+    },
+    "contentCreator": {
+      "title": "Content Creator",
+      "description": "Produkcja treści na skalę.",
+      "commingSoon": "System AI, który produkuje, personalizuje i zarządza contentem w skali - modułowa architektura pozwala wybrać dokładnie te funkcje, których potrzebujesz.",
+      "metadata": {
+        "title": "Content Creator | dentsu AI Stack",
+        "description": "Produkcja treści na skalę."
+      },
+      "hero": {
+        "logoAlt": "Content Creator Logo",
+        "tagline": "",
+        "bookDemo": "Umów demo",
+        "playVideo": "Zobacz video"
+      }
+    },
+    "echo": {
+      "title": "Echo",
+      "description": "Zaawansowana analiza sentymentu i opinii.",
+      "metadata": {
+        "title": "Echo | dentsu AI Stack",
+        "description": "Zaawansowana analiza sentymentu i opinii."
+      },
+      "hero": {
+        "logoAlt": "Echo Logo",
+        "tagline": "Pogłębiona analityka sentymentu i opinii konsumenckich.",
+        "bookDemo": "Umów demo ",
+        "playVideo": "Zobacz video"
+      },
+      "challenge": {
+        "title": "Wyzwanie",
+        "subtitle": "Szum informacyjny i fragmentacja źródeł. ",
+        "descriptionBefore": "Współczesne marki operują w warunkach ",
+        "highlight": "„przeładowania informacyjnego”",
+        "descriptionAfter": ", gdzie głównym problemem nie jest brak danych, ale wyodrębnienie istotnych opinii z zalewu nieistotnych wzmianek. Marki często opierają swoje decyzje na niepełnych lub błędnie zinterpretowanych danych, co prowadzi do kosztownych pomyłek w strategii produktowej i komunikacyjnej."
+      },
+      "solution": {
+        "title": "Rozwiązanie od dentsu - Echo",
+        "description": "System AI, który z ogromną precyzją analizuje tysiące cyfrowych konwersacji toczących się wokół Twojej marki i produktów. Dowiesz się nie tylko, co mówią o Tobie konsumenci, ale też, dlaczego to robią - od konkretnych cech produktu po jakość obsługi. Echo działa na wielką skalę, zamieniając rozproszone komentarze w gotowe wnioski, które pomogą Ci lepiej dopasować ofertę do realnych potrzeb klientów.",
+        "readMore": "Czytaj więcej",
+        "items": []
+      },
+      "gains": {
+        "title": "Co zyskujesz",
+        "items": [
+          {
+            "iconAlt": "Comp Icon",
+            "title": "Zrozumienie realnych potrzeb.",
+            "description": "Koniec z domysłami. Echo dostarcza twarde dane niezbędne do budowania strategii opartych na autentycznych motywacjach, potrzebach i bolączkach Twoich konsumentów. ",
+            "readMore": "Czytaj więcej"
+          },
+          {
+            "iconAlt": "Cup Icon",
+            "title": "Precyzyjną analitykę.",
+            "description": "Przejście od ogólnej oceny sentymentu do analityki aspektowej. Pozwala to na precyzyjną identyfikację wydźwięku wypowiedzi w odniesieniu do konkretnych cech produktu, usługi lub wizerunku marki. ",
+            "readMore": "Czytaj więcej"
+          },
+          {
+            "iconAlt": "Mic Icon",
+            "title": "Podsumowanie AI.",
+            "description": "Automatyczne generowanie podsumowań dla tysięcy postów i recenzji, co pozwala na szybkie wyłapywanie najważniejszych trendów.",
+            "readMore": "Czytaj więcej"
+          },
+          {
+            "iconAlt": "Clock Icon",
+            "title": "Oszczędność czasu.",
+            "description": "Echo drastycznie skraca czas od zebrania danych do momentu wypracowania kluczowych wniosków.",
+            "readMore": "Czytaj więcej"
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Kiedy stosować produkt?",
+        "items": [
+          {
+            "title": "Monitorowanie kondycji marki.",
+            "description": "Systematycznie analizuj długoterminowe trendy w opiniach konsumentów i wyprzedzaj zmiany zamiast na nie reagować."
+          },
+          {
+            "title": "Analiza konkurencji.",
+            "description": "Porównaj, jak postrzegane są konkretne cechy Twoich produktów w zestawieniu z konkurencją."
+          },
+          {
+            "title": "Audyt przed-kampanijny.",
+            "description": "Zmapuj krajobraz opinii o Twojej marce i konkurencji - zidentyfikuj realne bariery zakupowe i realne drivery preferencji."
+          },
+          {
+            "title": "Percepcja po launchu.",
+            "description": "Uzyskaj szczegółowy obraz tego, jak został przyjęty Twój nowy produkt - od pierwszych użytkowników, na każdej platformie. "
+          }
+        ]
+      },
+      "faq": {
+        "title": "FAQ",
+        "items": [
+          {
+            "question": "Jakie dane analizuje Echo i skąd pochodzą?",
+            "answer": "Echo śledzi wzmianki o marce w mediach społecznościowych, portalach informacyjnych, na forach i w serwisach z recenzjami. Dane trafiają do systemu przez API platform, są czyszczone i normalizowane, zanim dotrą do silnika analitycznego."
+          },
+          {
+            "question": "Czy Echo radzi sobie z dziesiątkami tysięcy wzmianek naraz?",
+            "answer": "Tak - Echo przetwarza dane strumieniowo, w architekturze rozproszonej, więc duży wolumen nie spowalnia systemu. Gdy liczba wzmianek gwałtownie rośnie przy premierze produktu czy kryzysie PR, raportowanie nie opóźnia się i żadna wzmianka się nie gubi."
+          },
+          {
+            "question": "Czy Echo wykrywa sarkazm, ironię i negatyw ukryty pod pozytywnym tonem?",
+            "answer": "Tak - Echo analizuje kontekst całej wypowiedzi: ton, interpunkcję, kontrast między treścią a reakcjami innych użytkowników. Dzięki temu rozpoznaje \"super, znowu awaria\" jako negatywną wzmiankę, nie pochwałę - bez tego rosnące niezadowolenie klientów mogłoby pozostać niezauważone. Przy niskiej pewności system kieruje wzmiankę do ręcznej weryfikacji."
+          },
+          {
+            "question": "Dlaczego 5-poziomowa skala sentymentu, skoro rynek zwykle poprzestaje na 3?",
+            "answer": "Skala pozytywny/neutralny/negatywny myli drobne niezadowolenie z realnym kryzysem wizerunkowym. Pięć poziomów Echo pozwala od razu zobaczyć, która wzmianka wymaga natychmiastowej reakcji, a która może poczekać. Efekt: trafniejsze alerty i lepsza alokacja zasobów zespołu."
+          },
+          {
+            "question": "Kiedy najlepiej sięgnąć po Echo?",
+            "answer": "Echo sprawdza się w obu trybach - jako narzędzie do ciągłego monitoringu kondycji marki oraz jako jednorazowa, głęboka analiza przed ważnym momentem, jak premiera produktu czy start kampanii. Dobrym punktem wyjścia jest zwykle jednorazowy audyt, a w kolejnym kroku przejście na stały monitoring, żeby nie stracić z oczu zmian w czasie."
+          }
+        ]
+      },
+      "download": {
+        "title": "Pobierz materiały",
+        "link": "dentsuai_Echo_pl.zip"
+      },
+      "bookDemo": {
+        "title": "Umów demo",
+        "link": "#"
+      }
+    },
+    "hydePark": {
+      "title": "Hyde Park",
+      "description": "Przyspieszona ideacja kreatywna.",
+      "commingSoon": "System AI, który przyspiesza proces kreatywny, zamieniając brief w precyzyjne briefy egzekucyjne i setki unikalnych kreatywnych haków.",
+      "metadata": {
+        "title": "Hyde Park | dentsu AI Stack",
+        "description": "Przyspieszona ideacja kreatywna."
+      },
+      "hero": {
+        "logoAlt": "Hyde Park Logo",
+        "tagline": "",
+        "bookDemo": "Umów demo",
+        "playVideo": "Zobacz video"
+      }
+    },
+    "trendHunter": {
+      "title": "Trend Hunter",
+      "description": "Wykrywanie sygnałów kulturowych.",
+      "commingSoon": "System AI, który wykrywa sygnały kulturowe i rynkowe trendy, zanim staną się widoczne dla Twojej konkurencji.",
+      "metadata": {
+        "title": "Trend Hunter | dentsu AI Stack",
+        "description": "Wykrywanie sygnałów kulturowych."
+      },
+      "hero": {
+        "logoAlt": "Trend Hunter Logo",
+        "tagline": "",
+        "bookDemo": "Umów demo",
+        "playVideo": "Zobacz video"
+      }
+    },
+    "contextHub": {
+      "title": "Context Hub",
+      "description": "Baza wiedzy z mocą AI i Wirtualny Asystent.",
+      "metadata": {
+        "title": "Context Hub | dentsu AI Stack",
+        "description": "Baza wiedzy z mocą AI i Wirtualny Asystent. "
+      },
+      "hero": {
+        "logoAlt": "Context Hub Logo",
+        "tagline": "Twoja baza wiedzy z mocą AI i Wirtualny Asystent.",
+        "bookDemo": "Umów demo",
+        "playVideo": "Zobacz video"
+      },
+      "challenge": {
+        "title": "Wyzwanie",
+        "subtitle": "Fragmentacja wiedzy, utrata efektywności i obciążenie pracowników.",
+        "descriptionBefore": "Im większa organizacja, tym bardziej rozproszona wiedza - projekty, procedury HR, dokumenty prawne i case study giną w dziesiątkach systemów i baz. Zespoły tracą czas na szukanie informacji i odpowiadanie na te same pytania, zamiast skupiać się na pracy, która faktycznie przesuwa biznes do przodu.",
+        "highlight": "",
+        "descriptionAfter": ""
+      },
+      "solution": {
+        "title": "Rozwiązanie od dentsu - Context Hub",
+        "description": "Context Hub indeksuje i udostępnia wszystkie kluczowe dane organizacji - od opisów projektów, przez procedury HR, po dokumentację prawną - w jednym spójnym źródle prawdy. Wystarczy zapytać: Wirtualny Asystent rozumie pytanie zadane naturalnym językiem, przeszukuje dane - w tym treści wizualne dzięki analizie multimodalnej - i odpowiada błyskawicznie, tak jak zrobiłby to kompetentny kolega, a nie wyszukiwarka plików.",
+        "items": []
+      },
+      "gains": {
+        "title": "Co zyskujesz",
+        "items": [
+          {
+            "iconAlt": "Comp Icon",
+            "title": "Szybkie i zweryfikowane odpowiedzi.",
+            "description": "Błyskawiczny dostęp do informacji zamiast przeszukiwania wielu źródeł czy czekania na kolegę - i pewność, że odpowiedź jest spójna i zweryfikowana, niezależnie od tego, kto pyta.",
+            "readMore": "Czytaj więcej"
+          },
+          {
+            "iconAlt": "Cup Icon",
+            "title": "Wsparcie w podejmowaniu decyzji.",
+            "description": "Informacje trafiają do Ciebie w kontekście, nie jako suche fakty - co pozwala podejmować decyzje szybciej i z większą pewnością.",
+            "readMore": "Czytaj więcej"
+          },
+          {
+            "iconAlt": "Mic Icon",
+            "title": "Odciążenie zespołów.",
+            "description": "Rutynowe pytania obsługuje Context Hub, nie ludzie - zespoły HR, prawne i projektowe zyskują czas na pracę, która faktycznie wymaga ich kompetencji.",
+            "readMore": "Czytaj więcej"
+          },
+          {
+            "iconAlt": "Clock Icon",
+            "title": "Centralizacja wiedzy.",
+            "description": "Jedno repozytorium, które rośnie razem z organizacją i chroni jej wiedzę - nawet gdy ludzie odchodzą.",
+            "readMore": "Czytaj więcej"
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Kiedy stosować produkt?",
+        "items": [
+          {
+            "title": "Zarządzanie projektami.",
+            "description": "Szybki dostęp do historycznych case study i dokumentacji projektowej, np. \"pokaż projekty z użyciem rozszerzonej rzeczywistości\"."
+          },
+          {
+            "title": "Onboarding i szkolenia.",
+            "description": "Nowi pracownicy pytają o procedury i politykę firmy zamiast szukać w segregatorach, np. \"jak złożyć wniosek urlopowy?\"."
+          },
+          {
+            "title": "Wsparcie prawne i compliance.",
+            "description": "Błyskawiczny dostęp do regulacji, umów i aktualnych standardów, np. \"jaka jest ostatnia wersja polityki RODO?\" - minimalizujący ryzyko prawne."
+          },
+          {
+            "title": "Tworzenie nowych strategii i ofert.",
+            "description": "Baza wiedzy i inspiracja do rozwoju nowych rozwiązań, zamiast zaczynania każdego projektu od zera."
+          }
+        ]
+      },
+      "faq": {
+        "title": "FAQ",
+        "items": [
+          {
+            "question": "Czy Context Hub to zwykła wyszukiwarka plików, czy coś więcej?",
+            "answer": "Znacznie więcej - wyszukiwarka zwraca jedynie listę dokumentów, a użytkownik samodzielnie przeszukuje ich treści. Context Hub działa jako inteligentny asystent wiedzy - rozumie pytania zadane językiem naturalnym, błyskawicznie analizuje zgromadzone dokumenty w ich kontekście i generuje precyzyjną, gotową odpowiedź wraz z odesłaniem do konkretnych źródeł - dokładnie tak, jak zrobiłby to dedykowany ekspert."
+          },
+          {
+            "question": "Jakie rodzaje dokumentów i systemów może integrować i analizować Context Hub?",
+            "answer": "Context Hub indeksuje m.in. opisy projektów, procedury wewnętrzne (np. HR, operacyjne), dokumentację prawną, arkusze kalkulacyjne i materiały multimedialne. Dzięki temu może bez problemu powiązać np. informacje zapisane w tekście umowy z danymi z tabeli finansowej."
+          },
+          {
+            "question": "Czy każdy pracownik będzie miał dostęp do wszystkich danych, czy można ograniczyć widoczność np. dokumentów HR czy prawnych?",
+            "answer": "Context Hub nie zmienia Twojej dotychczasowej polityki bezpieczeństwa, lecz ściśle w niej działa. Dostęp do dokumentów jest konfigurowany zgodnie ze strukturą organizacyjną firmy i uprawnieniami poszczególnych użytkowników. Oznacza to, że pliki wrażliwe - takie jak umowy prawne czy dane HR - będą widoczne i analizowane przez asystenta wyłącznie dla pracowników, którzy już wcześniej posiadali do nich bezpośredni dostęp."
+          },
+          {
+            "question": "Co się dzieje, gdy Context Hub nie zna odpowiedzi na zadane pytanie? Czy istnieje ryzyko, że „zmyśli” informacje?",
+            "answer": "Context Hub eliminuje ryzyko „zmyślania” faktów — każda odpowiedź jest zakotwiczona w zweryfikowanych dokumentach firmy, z odnośnikiem do źródła. Jeśli w bazie brakuje potrzebnych informacji, asystent wprost to mówi, zamiast zgadywać."
+          },
+          {
+            "question": "Czy Context Hub obsługuje dokumenty i zapytania w różnych językach?",
+            "answer": "Context Hub potrafi dynamicznie tłumaczyć i przetwarzać wiedzę w locie. Oznacza to, że międzynarodowy zespół może zadać pytanie w języku polskim, angielskim czy niemieckim, a asystent odnajdzie właściwe informacje w dokumentach źródłowych spisanych w zupełnie innym języku i wygeneruje odpowiedź w języku zapytania."
+          }
+        ]
+      },
+      "download": {
+        "title": "Pobierz materiały",
+        "link": "dentsuai_ContextHub_pl.zip"
+      },
+      "bookDemo": {
+        "title": "Umów demo",
+        "link": "#"
+      }
+    },
+    "sniffer": {
+      "title": "Sniffer",
+      "description": "Wiedz pierwszy, co robi konkurencja i sieć wokół Twojej marki.",
+      "metadata": {
+        "title": "Sniffer | dentsu AI Stack",
+        "description": "Wiedz pierwszy, co robi konkurencja i sieć wokół Twojej marki."
+      },
+      "hero": {
+        "logoAlt": "Sniffer Logo",
+        "tagline": "Wiedz pierwszy, co robi konkurencja <br/>i sieć wokół Twojej marki.",
+        "bookDemo": "Umów demo",
+        "playVideo": "Odtwórz wideo"
+      },
+      "challenge": {
+        "title": "Wyzwanie",
+        "subtitle": "Konkurencja w czasie rzeczywistym.",
+        "descriptionBefore": "Konkurencja zmienia ceny, ofertę i narrację codziennie - a Ty dowiadujesz się o tym za późno albo przypadkiem. Ręczne sprawdzanie dziesiątek stron jest niewykonalne, klasyczne alerty toną w szumie, a \"wykryto zmianę HTML\" nie mówi Ci co naprawdę się stało.",
+        "highlight": "Tracisz okazje i ruchy rynkowe,",
+        "descriptionAfter": "o których istnieniu nawet nie wiesz."
+      },
+      "solution": {
+        "title": "Rozwiązanie od dentsu - Sniffer",
+        "description": "System AI, który nieprzerwanie monitoruje strony Twojej konkurencji i rynku, wykrywa zmiany (ceny, oferty, produkty, komunikaty), rozumie ich biznesowe znaczenie i zamienia surowy strumień zmian w gotowy briefing.<br/><br/>Dwa moduły. Jeden pełny obraz tego, co dzieje się wokół Twojej marki.",
+        "items": [
+          {
+            "title": "Change Tracker - monitoring zmian na stronach.",
+            "description": "Wskazujesz strony, które mają być obserwowane - Twoje i konkurencji. Sniffer monitoruje je nieprzerwanie, wykrywa zmiany i - zamiast pokazywać surowy zapis - wyjaśnia, co się zmieniło i dlaczego ma to znaczenie. Każda zmiana trafia do osi czasu danej marki."
+          },
+          {
+            "title": "Scout - wykrywanie okazji i konkurencji.",
+            "description": "Definiujesz, czego szukasz - konkurentów, ofert, okazji. Scout nieprzerwanie przeszukuje sieć i pokazuje wyłącznie to, co rzeczywiście nowe - bez powtórzeń i tego, co już znasz."
+          }
+        ]
+      },
+      "gains": {
+        "title": "Co zyskujesz",
+        "items": [
+          {
+            "iconAlt": "Comp Icon",
+            "title": "Wczesny sygnał o ruchach konkurencji.",
+            "description": "Wiesz pierwszy, gdy konkurent zmienia cenę, wypuszcza produkt albo przerabia komunikację - zanim zauważy to rynek.",
+            "readMore": "Read more"
+          },
+          {
+            "iconAlt": "Cup Icon",
+            "title": "Pełną kontrolę nad tym, co obserwujesz.",
+            "description": "Sam decydujesz, które marki, strony i tematy śledzisz - a w zamian otrzymujesz gotową syntezę, nie listę surowych zmian do przeanalizowania.",
+            "readMore": "Read more"
+          },
+          {
+            "iconAlt": "Mic Icon",
+            "title": "Znaczenie zamiast szumu.",
+            "description": "Sniffer nie mówi tylko \"strona się zmieniła\" - analiza AI tłumaczy co i dlaczego ma to znaczenie, z linkiem do źródła.",
+            "readMore": "Read more"
+          },
+          {
+            "iconAlt": "Clock Icon",
+            "title": "Oszczędność czasu.",
+            "description": "Zamiast godzin spędzonych na sprawdzaniu dziesiątek stron, dostajesz jeden uporządkowany strumień zmian - od razu wiesz, co przeczytać najpierw.",
+            "readMore": "Read more"
+          }
+        ]
+      },
+      "useCases": {
+        "title": "Kiedy stosować produkt?",
+        "items": [
+          {
+            "title": "Monitoring konkurencji.",
+            "description": "Ceny, promocje, nowe produkty, zmiany w komunikacji."
+          },
+          {
+            "title": "Przed kampanią.",
+            "description": "Sprawdź, co robi rynek, zanim ruszysz."
+          },
+          {
+            "title": "Zarządzanie ryzykiem.",
+            "description": "Szybko wychwyć zmiany regulaminów, statusów, awarie czy negatywne sygnały."
+          },
+          {
+            "title": "Ciągła obserwacja.",
+            "description": "Utrzymuj aktualną oś czasu zmian dla kluczowych zasobów i brandów."
+          }
+        ]
+      },
+      "faq": {
+        "title": "FAQ",
+        "items": [
+          {
+            "question": "Czym różnią się moduły Change Tracker i Scout i czy potrzebuję obu?",
+            "answer": "Change Tracker monitoruje konkretne, wskazane przez Ciebie strony i informuje, gdy coś się na nich zmieni. Scout działa szerzej: wpisujesz dowolne zapytanie - może to być każde wyzwanie biznesowe, które chcesz mieć pod obserwacją - i Scout przeszukuje całą sieć, informując Cię, gdy pojawi się coś nowego. Razem dają pełny obraz - to, co obserwujesz punktowo, i to, czego jeszcze nie wiesz, że powinieneś obserwować."
+          },
+          {
+            "question": "Czy Sniffer odróżnia realne zmiany (np. nową ofertę) od kosmetycznych (np. rotujący banner, data w stopce)?",
+            "answer": "Tak - Sniffer nie porównuje kodu strony, tylko analizuje treść, więc rozpoznaje różnicę między zmianą, która ma znaczenie biznesowe, a szumem wizualnym. Cookie bannery, rotujące elementy hero czy automatyczne daty w stopce nie generują fałszywych alertów."
+          },
+          {
+            "question": "Jak często Sniffer sprawdza monitorowane strony - czy zmiana zostanie wykryta w ciągu godzin, czy dni?",
+            "answer": "Częstotliwość jest konfigurowalna - od sprawdzania co minutę, przez kilka razy dziennie, po raz w tygodniu - i dostosowujesz ją do wagi danego zasobu: częściej dla stron kluczowych konkurentów, rzadziej dla pobocznego monitoringu."
+          },
+          {
+            "question": "W jakiej formie i jak często dostaję podsumowanie zmian?",
+            "answer": "Zmiany trafiają na bieżąco do osi czasu danej marki, a Ty dodatkowo otrzymujesz briefing mailowy z priorytetyzacją tego, co najważniejsze. Nie musisz sam przeglądać surowego strumienia zmian - dostajesz gotową syntezę."
+          },
+          {
+            "question": "Czy monitorowanie stron konkurencji w ten sposób jest zgodne z prawem i regulaminami tych stron?",
+            "answer": "Sniffer analizuje wyłącznie publicznie dostępne treści - te same, które widzi każdy odwiedzający stronę. Nie omija zabezpieczeń, nie loguje się na konta ani nie pozyskuje danych niedostępnych publicznie."
+          }
+        ]
+      },
+      "download": {
+        "title": "Pobierz materiały",
+        "link": "dentsuai_Sniffer_pl.zip"
+      },
+      "bookDemo": {
+        "title": "Umów demo",
+        "link": "#"
+      }
+    }
+  }
+}

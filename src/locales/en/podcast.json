@@ -1,0 +1,18 @@
+{
+  "podcast": {
+    "header": "Podcast",
+    "subtitle": "Listen to our stories",
+    "sections": [
+      {
+        "title": "Section 1",
+        "subtitle": "Subtitle 1",
+        "description": "Description for section 1."
+      },
+      {
+        "title": "Section 2",
+        "subtitle": "Subtitle 2",
+        "description": "Description for section 2."
+      }
+    ]
+  }
+}

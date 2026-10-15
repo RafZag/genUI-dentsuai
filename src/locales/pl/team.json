@@ -1,0 +1,99 @@
+{
+  "team": {
+    "header": "Ludzie za produktami AI",
+    "subtitle": "",
+    "sections": [
+      {
+        "title": "Section 1",
+        "subtitle": "Działamy na styku strategii marketingowej, technologii kreatywnej i data science - i budujemy produkty AI, które to odzwierciedlają.",
+        "description": "Nasz zespół łączy ludzi, którzy spędzili lata pracując nad realnymi kampaniami, dla realnych marek, w każdej dyscyplinie, której wymaga współczesny marketing. Nie budujemy narzędzi w oderwaniu od pracy - budujemy je, bo tę pracę wykonujemy i doskonale wiemy, gdzie są luki. Każdy produkt, który wypuszczamy, zaczął się od problemu, na który ktoś z nas natknął się podczas pracy nad realnym briefem. "
+      },
+      {
+        "title": "Kierownictwo",
+        "subtitle": "Kierownictwo",
+        "description": "",
+        "members": [
+          {
+            "name": "Bartosz Malina",
+            "role": "Head of AI",
+            "photo": "BM_big.png",
+            "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+          },
+          {
+            "name": "Bartłomiej Główczyński",
+            "role": "AI Expert",
+            "photo": "BG_big.png",
+            "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+          },
+          {
+            "name": "Monika Greszta",
+            "role": "Sr. Project Manager",
+            "photo": "MG_big.png",
+            "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+          }
+        ]
+      },
+      {
+        "title": "Deweloperzy",
+        "subtitle": "Deweloperzy",
+        "description": "",
+        "members": [
+          {
+            "name": "Marcin Palinka",
+            "role": "Tech Lead",
+            "photo": "MPal_big.png",
+            "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+          },
+          {
+            "name": "Kamil Gogola",
+            "role": "Tech Lead, Sr. AI Developer",
+            "photo": "KG_big.png",
+            "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+          },
+          {
+            "name": "Rafał Chojnowski",
+            "role": "Frontend Developer",
+            "photo": "RC_big.png",
+            "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+          },
+          {
+            "name": "Krzysztof Jarek",
+            "role": "Jr. AI Developer",
+            "photo": "KJ_big.png",
+            "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+          }
+        ]
+      },
+      {
+        "title": "dentsu Lab",
+        "subtitle": "dentsu Lab",
+        "description": "",
+        "members": [
+          {
+            "name": "Michał Pęczalski",
+            "role": "Head of Creative Technology",
+            "photo": "MP_big.png",
+            "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+          },
+          {
+            "name": "Łukasz Skwara",
+            "role": "Creative Technologist",
+            "photo": "LS_big.png",
+            "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+          },
+          {
+            "name": "Rafał Zagórny",
+            "role": "Creative Technologist",
+            "photo": "RZ_big.png",
+            "hint": "To miejsce na krótki opis tej osoby. Na razie używamy tekstu zastępczego, który później można podmienić na właściwy opis zespołu."
+          }
+        ]
+      },
+      {
+        "title": "Section 4",
+        "subtitle": "Jesteśmy małym zespołem, który robi rzeczy na granicy tego, co możliwe w AI i marketingu. Jeśli chcesz tu być - sprawdź nasze otwarte rekrutacje. ",
+        "description": ""
+      }
+    ]
+  }
+}

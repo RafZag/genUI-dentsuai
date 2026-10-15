@@ -1,0 +1,35 @@
+{
+  "lab": {
+    "header": "Creative Technology",
+    "subtitle": "",
+    "sections": [
+      {
+        "title": "Sekcja 1",
+        "subtitle": "Wierzymy, że przyszłość marketingu i komunikacji leży w inteligentnych, angażujących doświadczeniach napędzanych sztuczną inteligencją.",
+        "description": "Jesteśmy innowacyjnym ramieniem dentsu, nieustannie eksplorujemy i przesuwamy granice możliwości, przekształcając złożone algorytmy, zaawansowaną elektronikę, druk 3D i robotykę w namacalne aplikacje, immersyjne instalacje i innowacyjne produkty, które budują głębsze relacje z odbiorcami.  "
+      },
+      {
+        "title": "Podejście R&D.",
+        "subtitle": "Nasz zespół dentsu Lab specjalizuje się w łączeniu najnowszych osiągnięć technologicznych.",
+        "description": "Od wizji komputerowej po generatywne modele AI - z kreatywnym myśleniem. Tworzymy rozwiązania, które nie tylko wyróżniają naszych klientów, ale także redefiniują sposób interakcji z marką. Nasze podejście R&D oznacza, że jesteśmy zawsze o krok przed konkurencją, oferując klientom unikalne narzędzia do budowania marek w cyfrowym świecie. "
+      },
+      {
+        "title": "Od idei do funkcjonalnego prototypu.",
+        "subtitle": "Proof-of-Concepts i innowacyjne aplikacje.",
+        "description": "Tworzymy pionierskie aplikacje mobilne i webowe, które wykorzystują AI do rozwiązywania konkretnych problemów biznesowych i angażowania użytkowników w nowy sposób. Rozwijamy inteligentne systemy rekomendacji, interaktywne narzędzia edukacyjne oraz rozwiązania zwiększające efektywność i personalizację. Nasze POC to dynamiczne środowisko testowania nowych idei i technologii. Często rozwijamy je jako wewnętrzne projekty badawcze lub wczesne prototypy dla klientów. Otwierają one nowe możliwości, choć nie zawsze są jeszcze przeznaczone do publicznej komunikacji. "
+      },
+      {
+        "title": "Immersyjne instalacje z AI.",
+        "subtitle": "Projektujemy i wdrażamy unikalne instalacje, które przekształcają przestrzenie fizyczne w dynamiczne, interaktywne środowiska.",
+        "description": "Wykorzystując wizję komputerową, sztuczną inteligencję i generatywne modele, nasze instalacje reagują na ruch, obecność i interakcję użytkowników, oferując niezapomniane, multisensoryczne doświadczenia."
+      },
+      {
+        "title": "Produkty i rozwiązania oparte na AI.",
+        "subtitle": "Tworzymy skalowalne i gotowe do wdrożenia produkty, które wykorzystują pełen potencjał sztucznej inteligencji, dostarczają realną wartość biznesową i innowacyjną przewagę. ",
+        "description": ""
+      }
+    ],
+    "CTA": "Porozmawiajmy o tym, gdzie AI od dentsu może rozwinąć Twój biznes.",
+    "bookDemo": "Umów demo"
+  }
+}

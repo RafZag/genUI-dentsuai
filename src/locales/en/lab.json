@@ -1,0 +1,35 @@
+{
+  "lab": {
+    "header": "Creative Technology",
+    "subtitle": "",
+    "sections": [
+      {
+        "title": "Section 1",
+        "subtitle": "We believe the future of marketing and communication lies in intelligent, engaging experiences powered by artificial intelligence.",
+        "description": "We are the innovative arm of dentsu - continuously exploring and pushing the boundaries of what's possible, transforming complex algorithms, advanced electronics, 3D printing, and robotics into tangible applications, immersive installations, and innovative products that build deeper connections with audiences. "
+      },
+      {
+        "title": "R&D approach.",
+        "subtitle": "Our dentsu Lab team specialises in bridging the latest technological advances.",
+        "description": "From computer vision to generative AI models - with creative thinking. We build solutions that not only set our clients apart but redefine the way people interact with a brand. Our R&D approach means we're always one step ahead, giving clients unique tools to build their brands in a digital world. "
+      },
+      {
+        "title": "From idea to working prototype.",
+        "subtitle": "Proof-of-Concepts and innovative applications.",
+        "description": "We develop intelligent recommendation systems, interactive educational tools, and solutions that improve efficiency and personalisation. Our POCs are a dynamic environment for testing new ideas and technologies. We often develop them as internal research projects or early-stage client prototypes. They open new possibilities - though they are not always intended for public communication at this stage."
+      },
+      {
+        "title": "Immersive AI installations.",
+        "subtitle": "We design and deploy unique installations that transform physical spaces into dynamic, interactive environments.",
+        "description": "Using computer vision, artificial intelligence, and generative models, our installations respond to movement, presence, and user interaction - delivering unforgettable, multisensory experiences."
+      },
+      {
+        "title": "AI-powered products and solutions.",
+        "subtitle": "We build scalable, deployment-ready products that harness the full potential of artificial intelligence, deliver real business value and a genuine competitive edge.",
+        "description": ""
+      }
+    ],
+    "CTA": "Let’s talk about where AI by dentsu can grow your business.",
+    "bookDemo": "Book a demo"
+  }
+}
