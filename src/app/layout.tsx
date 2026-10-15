@@ -4,10 +4,7 @@ import { Sora } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
 
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import ContactComponent from '@/components/ContactComponent';
-import { Providers } from '@/app/providers';
+import SiteLayout from '@/components/SiteLayout';
 import { VisualEditingComponent } from '@/components/VisualEditing';
 
 const sora = Sora({
@@ -62,12 +59,7 @@ window.dataLayer.push({'gtm.start': new Date().getTime(), event:'gtm.js'});`}
             style={{ display: 'none', visibility: 'hidden' }}
           />
         </noscript>
-        <Providers>
-          <Navbar />
-          <ContactComponent />
-          {children}
-          <Footer />
-        </Providers>
+        <SiteLayout>{children}</SiteLayout>
         {isDraftMode && <VisualEditingComponent />}
       </body>
     </html>

@@ -1,5 +1,7 @@
+'use client';
+
 import React from 'react';
-import { SectionHeader } from '@/components/SectionHeader';
+import SectionHeading from '@/components/SectionHeading';
 
 interface SolutionItem {
   _key?: string;
@@ -19,58 +21,59 @@ export interface SolutionsBlockProps {
 export function SolutionsBlock({
   items,
   variant = 'grid-checkmarks',
-  colorClass = 'text-ctMainColor',
+  colorClass = 'text-white',
   brandHex = '#00ff84',
 }: SolutionsBlockProps) {
   if (!items || items.length === 0) return null;
 
+  // The first item can serve as the prominent headline box if appropriate
+  const [firstItem, ...restItems] = items;
+
   return (
-    <section className="py-12 border-t border-white/10 w-full">
-      <div className="mb-8">
-        <SectionHeader colorClass={colorClass} plusIconColor="text-lightGray">
-          Jak odpowiadamy na te potrzeby
-        </SectionHeader>
+    <section className="w-full flex flex-col my-6 lg:my-10 overflow-visible">
+      {/* Featured solution card with brand background tint and glass reflection */}
+      <div
+        className="container mx-auto w-full max-w-6xl px-6 sm:px-10 rounded-2xl pt-10 pb-12 relative overflow-visible border border-white/10"
+        style={{
+          background: `radial-gradient(circle at 10% 20%, ${brandHex}40 0%, rgba(25, 25, 25, 0.95) 70%)`,
+        }}
+      >
+        <div className="flex flex-col lg:flex-row gap-8 relative">
+          <div className="w-full">
+            <SectionHeading colorClass="text-white" plusIconColor="text-white/75">
+              Rozwiązanie
+            </SectionHeading>
+
+            {firstItem && (
+              <div className="mt-8 lg:ml-12">
+                {firstItem.header && (
+                  <h3 className="text-xl lg:text-2xl font-light text-white mb-4">
+                    {firstItem.header}
+                  </h3>
+                )}
+                {firstItem.body && (
+                  <p className="text-white/90 text-base font-normal lg:text-lg leading-relaxed whitespace-pre-line max-w-3xl">
+                    {firstItem.body}
+                  </p>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
       </div>
 
-      {variant === 'timeline-steps' ? (
-        <div className="relative border-l border-white/20 ml-4 pl-8 space-y-10">
-          {items.map((item, idx) => (
-            <div key={item._key || idx} className="relative">
-              <span
-                className="absolute -left-[45px] top-0 flex h-7 w-7 items-center justify-center rounded-full text-black text-xs font-bold ring-4 ring-[#101010]"
-                style={{ backgroundColor: brandHex }}
-              >
-                {idx + 1}
-              </span>
+      {/* Subsequent Solution Items rendered in lp-dentsu-ai clean grid */}
+      {restItems.length > 0 && (
+        <div className="container mx-auto mt-4 px-6 sm:px-10 w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 gap-8 pt-6 pb-6">
+          {restItems.map((item, idx) => (
+            <div key={item._key || idx} className="lg:ml-12">
               {item.header && (
-                <h3 className="text-xl font-medium text-white mb-2">
+                <h3 className="text-xl lg:text-2xl font-light text-white mt-4">
                   {item.header}
                 </h3>
               )}
               {item.body && (
-                <p className="text-base text-[#adadad] font-light leading-relaxed whitespace-pre-line">
-                  {item.body}
-                </p>
-              )}
-            </div>
-          ))}
-        </div>
-      ) : (
-        /* Domyślny: grid-checkmarks */
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {items.map((item, idx) => (
-            <div
-              key={item._key || idx}
-              className="rounded-2xl border border-white/15 bg-black/40 backdrop-blur-sm p-6 sm:p-8 hover:border-white/30 transition-colors"
-            >
-              {item.header && (
-                <h3 className="text-xl font-medium text-white mb-3 flex items-center gap-3">
-                  <span className={`${colorClass} font-semibold text-lg`}>✓</span>
-                  {item.header}
-                </h3>
-              )}
-              {item.body && (
-                <p className="text-base text-[#adadad] font-light leading-relaxed whitespace-pre-line">
+                <p className="text-base font-light lg:text-lg text-lightGray mt-2 leading-relaxed whitespace-pre-line">
                   {item.body}
                 </p>
               )}

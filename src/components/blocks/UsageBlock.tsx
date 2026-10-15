@@ -1,6 +1,7 @@
+'use client';
+
 import React from 'react';
-import { SectionHeader } from '@/components/SectionHeader';
-import { DentsuArrowIcon } from '@/components/icons/DentsuArrowIcon';
+import SectionHeading from '@/components/SectionHeading';
 
 interface UsageItem {
   _key?: string;
@@ -24,49 +25,31 @@ export function UsageBlock({
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="py-12 border-t border-white/10 w-full">
-      <div className="mb-8">
-        <SectionHeader colorClass={colorClass} plusIconColor="text-lightGray">
-          Kiedy warto po to sięgnąć?
-        </SectionHeader>
-      </div>
+    <section className="w-full flex mt-10 lg:mt-20 mb-16">
+      <div className="container flex flex-col mx-auto w-full max-w-6xl px-6 sm:px-10 lg:pl-0">
+        <SectionHeading colorClass={colorClass} plusIconColor="text-lightGray">
+          Zastosowanie i scenariusze użycia
+        </SectionHeading>
 
-      {style === 'numbered-cards' ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {items.map((item, idx) => (
-            <div
-              key={item._key || idx}
-              className="rounded-2xl border border-white/15 bg-black/40 backdrop-blur-sm p-6 sm:p-8 flex flex-col justify-start hover:border-white/30 transition-colors"
-            >
-              <div className="flex items-center gap-3 mb-3">
-                <span
-                  className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-white/20 text-xs font-medium text-black"
-                  style={{ backgroundColor: brandHex }}
-                >
-                  {idx + 1}
-                </span>
-                {item.header && (
-                  <h3 className="text-xl font-medium text-white">
-                    {item.header}
-                  </h3>
-                )}
-              </div>
-              {item.body && (
-                <p className="text-base text-[#adadad] font-light leading-relaxed pl-10 whitespace-pre-line">
-                  {item.body}
-                </p>
-              )}
-            </div>
-          ))}
-        </div>
-      ) : (
-        /* Oryginalny styl lp-dentsu-ai UseCasesSection */
-        <div className="grid lg:grid-cols-2 gap-8 mt-6 lg:ml-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-10 lg:ml-12">
           {items.map((item, idx) => (
             <div key={item._key || idx}>
               <h3 className="font-light text-white text-xl lg:text-2xl inline-flex items-center gap-3 my-4">
-                <DentsuArrowIcon color="#363636" className="relative top-px h-5 w-4 shrink-0" />
-                <span>{item.header}</span>
+                {/* Dentsu step mark glyph */}
+                <svg
+                  width="14"
+                  height="19"
+                  viewBox="0 0 13 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="relative top-px h-5 w-4 shrink-0"
+                >
+                  <path
+                    d="M11.13 6.00572C11.13 6.00572 11.0941 6.00572 11.0761 6.00572H8.43292C7.37206 6.00572 6.50899 5.20721 6.50899 4.2257V3.95953V1.78027C6.50899 0.798765 5.64592 0.000255303 4.58506 0.000255303H1.94191C0.863071 -0.0163803 0 0.78213 0 1.76363V4.20907C0 5.19057 0.863071 5.98908 1.92393 5.98908H4.56708C5.62794 5.98908 6.49101 6.78759 6.49101 7.76909V10.2145C6.49101 11.196 5.62794 11.9945 4.56708 11.9945H1.92393C0.863071 11.9945 0 12.7931 0 13.7746V16.22C0 17.2015 0.863071 18 1.92393 18H4.56708C5.62794 18 6.49101 17.2015 6.49101 16.22V14.0407V13.7746C6.49101 12.7931 7.35408 11.9945 8.41494 11.9945H11.0581C11.0581 11.9945 11.0941 11.9945 11.112 11.9945C12.1549 11.9779 13 11.1794 13 10.2145V7.76909C13 6.80423 12.1549 6.00572 11.112 5.98908L11.13 6.00572Z"
+                    fill="#363636"
+                  />
+                </svg>
+                {item.header}
               </h3>
               {item.body && (
                 <p className="ml-7 text-base font-light lg:text-lg text-lightGray leading-relaxed whitespace-pre-line">
@@ -76,7 +59,7 @@ export function UsageBlock({
             </div>
           ))}
         </div>
-      )}
+      </div>
     </section>
   );
 }
