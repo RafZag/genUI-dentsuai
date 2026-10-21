@@ -12,6 +12,8 @@ interface ProductHeroProps {
   brandHex: string;
   logoUrl?: string;
   logoAlt?: string;
+  heroImageUrl?: string;
+  heroImageAlt?: string;
   websiteUrl?: string;
   downloadLink?: string;
   downloadTitle?: string;
@@ -24,6 +26,8 @@ export default function ProductHero({
   brandHex,
   logoUrl,
   logoAlt,
+  heroImageUrl,
+  heroImageAlt,
   websiteUrl,
   downloadLink,
   downloadTitle,
@@ -32,75 +36,70 @@ export default function ProductHero({
   const { t } = useLanguage();
 
   return (
-    <section className="relative w-full min-h-[480px] lg:min-h-[580px] flex items-center justify-center overflow-hidden bg-black rounded-b-3xl border-b border-white/10">
-      {/* Background subtle radial glow with product tint */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-40"
-        style={{
-          background: `radial-gradient(circle at 50% 30%, ${brandHex}35 0%, transparent 65%)`,
-        }}
-      />
-      <div className="absolute inset-0 bg-black/50" aria-hidden="true" />
+    <section className="relative w-full h-140 lg:h-180 flex items-center justify-center overflow-hidden bg-black">
+      {/* Background Image from CMS (with dark tint & vignette matching reference) */}
+      {heroImageUrl ? (
+        <Image
+          src={heroImageUrl}
+          alt={heroImageAlt || `${name} background`}
+          fill
+          priority
+          sizes="100vw"
+          className="absolute inset-0 h-full w-full object-cover filter-[saturate(0.25)] brightness-75"
+        />
+      ) : (
+        /* Fallback dark radial glow when no background image is uploaded */
+        <div
+          className="absolute inset-0 pointer-events-none opacity-40"
+          style={{
+            background: `radial-gradient(circle at 50% 40%, ${brandHex}30 0%, transparent 70%)`,
+          }}
+        />
+      )}
 
-      <div className="relative z-10 container flex flex-col gap-6 mx-auto max-w-5xl items-center justify-center text-center px-6 py-20">
-        {/* Product Logo */}
+      {/* Dark overlay matching reference bg-black/45 */}
+      <div className="absolute inset-0 bg-black/45" aria-hidden="true" />
+
+      {/* Hero content aligned exactly like reference HeroBanner */}
+      <div className="relative z-10 container flex flex-col gap-8 mx-auto max-w-6xl items-center justify-center">
         {logoUrl ? (
-          <div className="relative h-28 w-28 sm:h-36 sm:w-36 mb-2">
+          <div className="relative w-[clamp(18rem,32vw,24.5rem)] h-24 sm:h-32 flex items-center justify-center">
             <Image
               src={logoUrl}
               alt={logoAlt || `${name} logo`}
               fill
-              sizes="(max-width: 640px) 112px, 144px"
+              sizes="(max-width: 1280px) 32vw, 392px"
               className="object-contain drop-shadow-[0_12px_24px_rgba(0,0,0,0.5)]"
               priority
             />
           </div>
         ) : (
-          <div
-            className="flex h-24 w-24 items-center justify-center rounded-2xl border border-white/10 text-3xl font-bold shadow-xl mb-2"
-            style={{
-              color: brandHex,
-              backgroundColor: `${brandHex}20`,
-            }}
+          <h1
+            className="text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-tight text-center"
+            style={{ color: brandHex }}
           >
-            {name.slice(0, 2).toUpperCase()}
-          </div>
+            {name}
+          </h1>
         )}
 
-        {/* Product Title / Tagline in dentsuai.com style */}
-        <h1
-          className="text-4xl sm:text-6xl lg:text-7xl font-semibold tracking-tight"
-          style={{ color: brandHex }}
-        >
-          {name}
-        </h1>
-
         {tagline && (
-          <p className="px-6 text-2xl sm:text-3xl lg:text-4xl text-white font-light max-w-3xl leading-snug">
+          <p className="px-6 text-3xl lg:text-4xl text-white font-light text-center max-w-4xl leading-snug">
             {tagline}
           </p>
         )}
 
-        {description && (
-          <p className="max-w-2xl text-base sm:text-lg text-lightGray font-light leading-relaxed whitespace-pre-line mt-2">
-            {description}
-          </p>
-        )}
-
-        {/* CTA Buttons in exact lp-dentsu-ai button styling */}
-        <div className="flex flex-wrap items-center justify-center gap-5 mt-6">
+        {/* Buttons matching reference HeroBanner styling */}
+        <div className="flex gap-6 flex-wrap justify-center">
           <button
             type="button"
             onClick={openContactModal}
-            className="px-6 py-3 rounded-lg font-light text-white text-base transition-colors duration-300 hover:bg-white hover:text-black cursor-pointer shadow-md"
+            className="px-6 py-3 backdrop-blur-sm text-white rounded-lg border font-light transition-colors duration-300 hover:bg-white hover:text-black cursor-pointer hover:border-white"
             style={{
               backgroundColor: brandHex,
               borderColor: brandHex,
-              color: '#000000',
-              fontWeight: 500,
             }}
           >
-            {t('common.bookDemo') || 'Umów Demo'}
+            {t('common.bookDemo') || 'Umów demo'}
           </button>
 
           {websiteUrl && (
@@ -108,7 +107,7 @@ export default function ProductHero({
               href={websiteUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 backdrop-blur-sm bg-black/40 text-white rounded-lg border border-white/30 font-light text-base transition-colors duration-300 hover:bg-white hover:text-black hover:border-white"
+              className="px-6 py-3 backdrop-blur-sm bg-black/20 text-white rounded-lg border border-white/40 font-light transition-colors duration-300 hover:bg-white hover:text-black cursor-pointer hover:border-white text-center"
             >
               Strona produktu
             </a>
@@ -118,7 +117,15 @@ export default function ProductHero({
             <a
               href={downloadLink}
               download
-              className="px-6 py-3 backdrop-blur-sm bg-black/40 text-white rounded-lg border border-white/30 font-light text-base transition-colors duration-300 hover:bg-white hover:text-black hover:border-white"
+              className="px-6 py-3 backdrop-blur-sm bg-black/20 text-white rounded-lg border border-white/40 font-light transition-colors duration-300 hover:text-black cursor-pointer w-54 text-center"
+              onMouseEnter={(e) => {
+                (e.currentTarget as HTMLElement).style.backgroundColor = brandHex;
+                (e.currentTarget as HTMLElement).style.borderColor = brandHex;
+              }}
+              onMouseLeave={(e) => {
+                (e.currentTarget as HTMLElement).style.backgroundColor = 'rgba(0, 0, 0, 0.2)';
+                (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255, 255, 255, 0.4)';
+              }}
             >
               {downloadTitle || 'Pobierz one-pager'}
             </a>

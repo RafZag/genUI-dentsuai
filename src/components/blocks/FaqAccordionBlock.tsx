@@ -27,7 +27,7 @@ export function FaqAccordionBlock({
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="container w-full max-w-6xl px-4 lg:px-0 text-left py-12 border-t border-white/10">
+    <section className="container w-full max-w-6xl px-4 lg:px-0 text-left py-12">
       <SectionHeader colorClass={colorClass} plusIconColor="text-[#ADADAD]">
         Często zadawane pytania
       </SectionHeader>

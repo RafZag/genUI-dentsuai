@@ -33,26 +33,21 @@ export function SolutionsBlock({
     <section className="w-full flex flex-col my-6 lg:my-10 overflow-visible">
       {/* Featured solution card with brand background tint and glass reflection */}
       <div
-        className="container mx-auto w-full max-w-6xl px-6 sm:px-10 rounded-2xl pt-10 pb-12 relative overflow-visible border border-white/10"
+        className="container mx-auto w-full max-w-6xl px-6 sm:px-10 rounded-2xl pt-10 pb-12 relative overflow-visible"
         style={{
-          background: `radial-gradient(circle at 10% 20%, ${brandHex}40 0%, rgba(25, 25, 25, 0.95) 70%)`,
+          background: `${brandHex}`,
         }}
       >
         <div className="flex flex-col lg:flex-row gap-8 relative">
           <div className="w-full">
-            <SectionHeading colorClass="text-white" plusIconColor="text-white/75">
-              Rozwiązanie
+            <SectionHeading colorClass="text-almostBlack" plusIconColor="text-white/75">
+              {firstItem.header}
             </SectionHeading>
 
             {firstItem && (
               <div className="mt-8 lg:ml-12">
-                {firstItem.header && (
-                  <h3 className="text-xl lg:text-2xl font-light text-white mb-4">
-                    {firstItem.header}
-                  </h3>
-                )}
                 {firstItem.body && (
-                  <p className="text-white/90 text-base font-normal lg:text-lg leading-relaxed whitespace-pre-line max-w-3xl">
+                  <p className="text-almostBlack text-base font-normal lg:text-lg leading-relaxed whitespace-pre-line max-w-3xl">
                     {firstItem.body}
                   </p>
                 )}

@@ -121,6 +121,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
         brandHex={brandColor.hex}
         logoUrl={product.logo?.asset?.url}
         logoAlt={product.logo?.alt}
+        heroImageUrl={product.heroImage?.asset?.url}
+        heroImageAlt={product.heroImage?.alt}
         websiteUrl={product.websiteUrl}
       />
 

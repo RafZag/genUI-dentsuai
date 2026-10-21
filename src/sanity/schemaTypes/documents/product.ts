@@ -33,6 +33,13 @@ export default defineType({
       options: { hotspot: true },
     }),
     defineField({
+      name: 'heroImage',
+      title: 'Hero Background Image',
+      type: 'image',
+      options: { hotspot: true },
+      description: 'Background image for the product hero banner (overlaid by dark vignette)',
+    }),
+    defineField({
       name: 'description',
       title: 'Description',
       type: 'text',

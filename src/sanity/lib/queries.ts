@@ -49,6 +49,10 @@ export const productBySlugQuery = groq`
       asset->{ url },
       alt
     },
+    heroImage {
+      asset->{ url },
+      alt
+    },
     // POBIERAMY WYGENEROWANY UKŁAD Z SANITY:
     sections[]{
       _key,

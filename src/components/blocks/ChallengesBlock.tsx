@@ -25,43 +25,43 @@ export function ChallengesBlock({
   if (!items || items.length === 0) return null;
 
   return (
-    <section className="w-full flex flex-col items-center my-6 lg:my-10">
-      <div className="container flex flex-col w-full max-w-6xl px-6 sm:px-10 py-10 sm:py-12 bg-almostBlack/85 backdrop-blur-sm rounded-2xl border border-white/10">
+    <section className="w-full flex-1 flex flex-col items-center lg:-mt-30 relative z-20">
+      <div className="container flex flex-col w-full max-w-6xl pl-10 pr-12 bg-almostBlack/85 backdrop-blur-sm rounded-2xl py-12">
         <SectionHeading colorClass={colorClass} plusIconColor="text-lightGray">
-          Z jakimi wyzwaniami się mierzysz?
+          Wyzwanie
         </SectionHeading>
 
         {variant === 'minimal-list' ? (
-          <ul className="space-y-4 mt-8 lg:ml-12">
+          <ul className="space-y-4">
             {items.map((item, idx) => (
               <li
                 key={item._key || idx}
-                className="flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-6 py-4 border-b border-white/10"
+                className="flex flex-col sm:items-baseline gap-2 sm:gap-6 py-4"
               >
                 {item.header && (
-                  <span className={`font-medium text-lg min-w-[220px] ${colorClass}`}>
+                  <h3 className="text-xl lg:text-2xl font-light text-white lg:ml-12 mt-8">
                     {item.header}
-                  </span>
+                  </h3>
                 )}
                 {item.body && (
-                  <span className="text-base text-lightGray font-light leading-relaxed">
+                  <p className="text-base font-light lg:ml-12 lg:text-lg text-[#ADADAD] mt-4">
                     {item.body}
-                  </span>
+                  </p>
                 )}
               </li>
             ))}
           </ul>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 lg:ml-12">
+          <div className="w-full">
             {items.map((item, idx) => (
-              <div key={item._key || idx} className="space-y-3">
+              <div key={item._key || idx} className={idx > 0 ? 'mt-8' : ''}>
                 {item.header && (
-                  <h3 className="text-xl lg:text-2xl font-light text-white">
+                  <h3 className="text-xl lg:text-2xl font-light text-white lg:ml-12 mt-8">
                     {item.header}
                   </h3>
                 )}
                 {item.body && (
-                  <p className="text-base font-light lg:text-lg text-lightGray leading-relaxed whitespace-pre-line">
+                  <p className="text-base font-light lg:ml-12 lg:text-lg text-[#ADADAD] mt-4">
                     {item.body}
                   </p>
                 )}
