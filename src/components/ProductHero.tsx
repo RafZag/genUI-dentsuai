@@ -36,7 +36,7 @@ export default function ProductHero({
   const { t } = useLanguage();
 
   return (
-    <section className="relative w-full h-140 lg:h-180 flex items-center justify-center overflow-hidden bg-black">
+    <section className="relative w-full h-140 lg:h-180 flex items-center justify-center overflow-hidden bg-black lg:pb-20">
       {/* Background Image from CMS (with dark tint & vignette matching reference) */}
       {heroImageUrl ? (
         <Image
@@ -63,7 +63,7 @@ export default function ProductHero({
       {/* Hero content aligned exactly like reference HeroBanner */}
       <div className="relative z-10 container flex flex-col gap-8 mx-auto max-w-6xl items-center justify-center">
         {logoUrl ? (
-          <div className="relative w-[clamp(18rem,32vw,24.5rem)] h-24 sm:h-32 flex items-center justify-center">
+          <div className="relative w-[clamp(18rem,32vw,24.5rem)] h-32 sm:h-60 flex items-center justify-center">
             <Image
               src={logoUrl}
               alt={logoAlt || `${name} logo`}
